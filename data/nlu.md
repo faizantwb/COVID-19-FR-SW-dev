@@ -32,6 +32,7 @@
 - that sounds good
 - correct
 - sure
+- aho
 
 ## intent:deny
 - no
