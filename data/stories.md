@@ -160,10 +160,6 @@
 * covid_incubation_fr
  - utter_answer_covid_incubation_fr
 
-## answer_covid_infected_life_fr
-* covid_infected_life_fr
- - utter_answer_covid_infected_life_fr
-
 ## answer_covid_infection_likelihood_fr
 * covid_infection_likelihood_fr
  - utter_answer_covid_infection_likelihood_fr
@@ -461,10 +457,6 @@
 ## answer_covid_incubation_sw
 * covid_incubation_sw
  - utter_answer_covid_incubation_sw
-
-## answer_covid_infected_life_sw
-* covid_infected_life_sw
- - utter_answer_covid_infected_life_sw
 
 ## answer_covid_infection_likelihood_sw
 * covid_infection_likelihood_sw
