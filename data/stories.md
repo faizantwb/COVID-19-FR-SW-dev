@@ -160,10 +160,6 @@
 * covid_incubation_fr
  - utter_answer_covid_incubation_fr
 
-## answer_covid_infected_life_fr
-* covid_infected_life_fr
- - utter_answer_covid_infected_life_fr
-
 ## answer_covid_infection_likelihood_fr
 * covid_infection_likelihood_fr
  - utter_answer_covid_infection_likelihood_fr
@@ -191,10 +187,6 @@
 ## answer_covid_masks_how_to_fr
 * covid_masks_how_to_fr
  - utter_answer_covid_masks_how_to_fr
-
-## answer_covid_medicine_fr
-* covid_medicine_fr
- - utter_answer_covid_medicine_fr
 
 ## answer_covid_most_at_risk_fr
 * covid_most_at_risk_fr
@@ -243,6 +235,14 @@
 ## answer_covid_myth_flies_fr
 * covid_myth_flies_fr
  - utter_answer_covid_myth_flies_fr
+ - form_myth_source_fr
+ - form{"name": "form_myth_source_fr"}
+ - form{"name": null}
+ - utter_anything_else_fr
+
+## answer_covid_myth_fruits_fr
+* covid_myth_fruits_fr
+ - utter_answer_covid_myth_fruits_fr
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
@@ -420,6 +420,10 @@
 * covid_what_is_corona_covid-19_fr
  - utter_answer_covid_what_is_corona_covid-19_fr
 
+## answer_covid_why_distancing_fr
+* covid_why_distancing_fr
+ - utter_answer_covid_why_distancing_fr
+
 <!-- SW COVID -->
 
 ## answer_covid_anxiety_sw
@@ -462,10 +466,6 @@
 * covid_incubation_sw
  - utter_answer_covid_incubation_sw
 
-## answer_covid_infected_life_sw
-* covid_infected_life_sw
- - utter_answer_covid_infected_life_sw
-
 ## answer_covid_infection_likelihood_sw
 * covid_infection_likelihood_sw
  - utter_answer_covid_infection_likelihood_sw
@@ -493,10 +493,6 @@
 ## answer_covid_masks_how_to_sw
 * covid_masks_how_to_sw
  - utter_answer_covid_masks_how_to_sw
-
-## answer_covid_medicine_sw
-* covid_medicine_sw
- - utter_answer_covid_medicine_sw
 
 ## answer_covid_most_at_risk_sw
 * covid_most_at_risk_sw
@@ -545,6 +541,14 @@
 ## answer_covid_myth_flies_sw
 * covid_myth_flies_sw
  - utter_answer_covid_myth_flies_sw
+ - form_myth_source_sw
+ - form{"name": "form_myth_source_sw"}
+ - form{"name": null}
+ - utter_anything_else_sw
+
+## answer_covid_myth_fruits_sw
+* covid_myth_fruits_sw
+ - utter_answer_covid_myth_fruits_sw
  - form_myth_source_sw
  - form{"name": "form_myth_source_sw"}
  - form{"name": null}
@@ -721,4 +725,8 @@
 ## answer_covid_what_is_corona_covid-19_sw
 * covid_what_is_corona_covid-19_sw
  - utter_answer_covid_what_is_corona_covid-19_sw
+
+## answer_covid_why_distancing_sw
+* covid_why_distancing_sw
+ - utter_answer_covid_why_distancing_sw
 
