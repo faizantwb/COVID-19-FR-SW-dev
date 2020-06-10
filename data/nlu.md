@@ -37,14 +37,6 @@
 - Ou sont les cas?
 - Où sont les cas de covid?
 - Ou sont les cas de corona?
-- Combien de personnes y a-t-il une couronne dans notre ville?
-- Combien y a-t-il de personnes atteintes de corona dans notre province?
-- Combien de patients corona avons-nous?
-- Combien sont piégés dans cette couronne?
-- Combien y en a-t-il avec une couronne?
-- Combien de patients pouvons-nous avoir en couronne en ce moment?
-- Combien de patients corona avons-nous atteints?
-- combien de personnes souffrent de corona?
 
 ## intent:ask_for_stats_fr
 - Quel est la statistique actuelle des malades de Covid 19 en RDC?
@@ -78,18 +70,6 @@
 - Tu parles pas le francais?
 - Vous parlez français?
 - Je ne te comprends pas
-- Combien de langues parlez-vous?
-- Quelle langue et quelle langue parlez-vous?
-- Combien de balises marquez-vous?
-- Quelle langue comprenez-vous?
-- quelle langue entendez-vous?
-- comprenez-vous la langue?
-- vous taggez en swahili?
-- vous comprenez le swahili ou le français
-- quelle langue parlez-vous?
-- parlez vous anglais?
-- parlez-vous français et swahili?
-- parlez-vous swahili ou français?
 
 ## intent:covid_anxiety_fr
 - Dans quelle mesure devrais-je m'inquiéter du coronavirus ?
@@ -103,11 +83,11 @@
 ## intent:covid_call_a_doctor_fr
 - Ou se faire dépister le covid 19?
 - Que faire en cas de symptome?
-- J'ai une toux seche et de la fièvre
-- Dois-je appeler un médecin?
-- Je veux passer un test
-- Quand devrais-je passer un test?
-- J'aimerais tester mon enfant.
+- 
+- 
+- 
+- 
+- 
 
 ## intent:covid_children_stress_fr
 - Comment apaiser les enfants pendant la pandémie du COVID-19 ?
@@ -157,17 +137,6 @@
 - Les gants protegent contre le virus?
 - Les gants protegent contre corona?
 - Les gants sont bien?
-- Les gants sont sur le point d'envoyer un virus corona?
-- les gants peuvent-ils être protégés par le virus corona?
-- Devez-vous porter des gants supérieurs pour ne pas avoir de corona?
-- les gants d'une saucisse nous ont aidés à la couronne?
-- Les gants sont-ils vraiment bons pour se protéger de la couronne?
-- comment les gants peuvent-ils aider lorsqu'ils ne reçoivent pas de couronne?
-- Les gants peuvent-ils être un virus corona?
-- si je porte des gants, je n'aurai pas de couronne?
-- si je porte des gants, je ne peux pas obtenir de couronne?
-- les gants aident à éviter la couronne ou quoi faire?
-- Quelle est la fonction des gants dans la couronne?
 
 ## intent:covid_hospital_fr
 - Dois-je aller à l'hôpital si j'ai une couronne?
@@ -199,6 +168,11 @@
 - Quelle est la signification de l'incubation?
 - Quelle est la période d'incubation?
 
+## intent:covid_infected_life_fr
+- Les gens peuvent-ils se remettre du virus corona?
+- Les gens peuvent-ils guérir du virus corona?
+- Aurai-je le COVID-19 pour toujours?
+
 ## intent:covid_infection_likelihood_fr
 - Quelles sont mes chances d'attraper le coronavirus ?
 - Vais-je attraper le COVID-19 ?
@@ -227,16 +201,12 @@
 - Dois-je m'isoler?
 - Qu'est-ce que l'isolement?
 - Comment puis-je m'isoler?
+- 
 - Combien de temps dois-je m'éloigner des gens si j'ai attrapé le virus ya corona?
 
 ## intent:covid_masks_availability_fr
-- Jusqu'où puis-je vendre un masque?
-- Jusqu'où puis-je acheter un masque?
-- Où puis-je me procurer le masque?
-- À quelle fréquence puis-je porter un masque?
 - Où puis-je me procurer un masque?
 - Où puis-je trouver un masque?
-- Je peux acheter un masque ici a Goma?
 - Puis-je acheter des masques localement?
 - Y a-t-il des masques à l'hôpital?
 - Le gouvernement nous donnera-t-il tous les masques?
@@ -254,10 +224,6 @@
 - Combien de fois est-ce que je peut porter ma masque?
 
 ## intent:covid_masks_effectiveness_fr
-- Quel type de masque dois-je porter?
-- Quiconque porte un masque ne peut pas obtenir de couronne?
-- Quand le masque aide-t-il?
-- Le masque envoie-t-il des missiles pour attraper le virus corona?
 - Les masques permettent-ils d'éviter d'attraper le COVID-19 ?
 - Les masques permettent-ils d'éviter d'attraper le COVID-19 ?
 - Un masque me protège-t-il du coronavirus ?
@@ -268,11 +234,6 @@
 - Le fait de porter un masque m'empêche-t-il d'attraper le corona ?
 
 ## intent:covid_masks_how_to_fr
-- Comment porter le cache nez?
-- Votre masque a-t-il été fabriqué ici à la maison ou à partir d'autres pays?
-- Devez-vous porter un masque tous les jours?
-- Comment porter un masque?
-- Est-elle toujours maquillée?
 - Comment porter un masque?
 - Quelle est la bonne façon de porter un masque?
 - Montrez-moi comment utiliser un masque
@@ -313,15 +274,19 @@
 - La neige peut-elle tuer le corona ?
 - Quelle est la pire température pour le COVID-19 ?
 - Le coronavirus meurt-il dans la neige ?
+- Le froid tue-t-il le COVID-19 ?
 - Le corona peut-il survivre à n'importe quelle température ?
 - Le froid empêche-t-il d'attraper le corona ?
 
-## intent:covid_myth_drink_fr
-- La consommation d'éthanol tue-t-elle le virus
-- La consommation de désinfectant tue-t-elle la couronne
-- La consommation de méthanol tue-t-elle le virus
-- Puis-je boire de l'eau de javel ou un désinfectant pour tuer le virust
-- Y a-t-il un produit chimique que je peux boire pour tuer le virus?
+## intent:covid_myth_cure_fr
+- Est-ce que les recherches sur le Covid ont déjà aboutis?
+- Peut-on guérir du COVID-19 ?
+- Y a-t-il quelque chose qui guérisse du corona?
+- Y a-t-il un remède contre le corona ?
+- Quel est le remède contre le COVID-19 ?
+- Quelqu'un a-t-il trouvé un remède contre le coronavirus ?
+- Y a-t-il un remède contre le COVID-19 ?
+- Un remède contre le corona a-t-il été trouvé ?
 
 ## intent:covid_myth_drink_alcohol_fr
 - L'alcool guérit-il la couronne?
@@ -329,16 +294,6 @@
 - Puis-je boire de l'alcool contre la maladie?
 - L'alcool est-il un remède contre la convoitise?
 - Dois-je boire de l'alcool pour éviter la couronne?
-- Quand je bois de l'alcool, je ne peux pas obtenir de couronne?
-- L'alcool et la capacité de me protéger de la couronne?
-- L'alcool peut-il être une couronne?
-- L'alcool a-t-il la force ou le pouvoir d'empêcher le virus corona?
-- Devez-vous boire de l'alcool pour obtenir une couronne?
-- L'alcool peut-il me guérir corona?
-- L'alcool est-il nécessaire dans le corps pour m'empêcher de couronner?
-- Dois-je boire de l'alcool pour obtenir une couronne?
-- Si vous buvez de l'alcool, vous n'aurez pas de couronne?
-- L'alcool est-il bon pour une personne qui aime se protéger de la couronne?
 
 ## intent:covid_myth_flies_fr
 - Les mouches ont-elles une couronne?
@@ -346,19 +301,6 @@
 - Les mouches peuvent-elles contracter la maladie?
 - Dois-je rester à l'écart des mouches?
 - Est-il possible de contracter la maladie des mouches?
-
-## intent:covid_myth_fruits_fr
-- Les bananes peuvent-elles guérir Covid-19?
-- Les bananes sont-elles un remède contre le coronavirus
-- Les bananes sont-elles un remède?
-- Puis-je manger des bananes pour traiter Corona?
-- Puis-je manger des bananes pour me protéger
-- Puis-je manger des fruits pour me protéger
-- Manger des citrons pour me protéger
-- Les oranges sont bien contre Corona
-- Thé avec orange aide contre corona?
-- Thé au citron me protège contre le virus?
-- 
 
 ## intent:covid_myth_garlic_fr
 - Puis-je utiliser l'ail comme un moyen de me protéger du coronavirus ?
@@ -404,6 +346,13 @@
 - Les bains empêchent-ils d'attraper le coronavirus ?
 - Puis-je me prémunir contre le COVID-19 en prenant un bain ?
 
+## intent:covid_myth_medicine_fr
+- Existe-t-il un remède contre la couronne?
+- Puis-je prendre des antibiotiques contre Covid?
+- Existe-t-il des médicaments pour soigner la maladie?
+- Puis-je prendre des médicaments pour prévenir la couronne?
+- Que dois-je faire si je pense avoir une couronne?
+
 ## intent:covid_myth_mosquitos_fr
 - Est-ce vrai que les moustiques peuvent transmettre le corona ?
 - Une piqûre de moustique peut-elle contenir le corona ?
@@ -423,9 +372,13 @@
 - Les enfants sont-ils immunisés contre le corona ?
 
 ## intent:covid_myth_other_vaccines_fr
+- Quels vaccins contre le corona sont disponibles ?
+- Les vaccins sont-ils efficaces pour tuer le corona ?
+- Est-il vrai que les vaccins neutralisent le coronavirus ?
 - Le vaccin contre la pneumonie peut-il empêcher l'infection au corona ?
 - Puis-je utiliser le vaccin contre la pneumonie pour éviter d'attraper le COVID-19 ?
 - Devrais-je me faire vacciner contre la pneumonie ?
+- 
 - D'autres vaccins protègent-ils du coronavirus ?
 
 ## intent:covid_myth_phone_signals_fr
@@ -538,8 +491,6 @@
 - Le coronavirus et le SRAS sont-ils identiques ?
 
 ## intent:covid_stay_at_home_fr
-- 
-- Il faut éviter d'aller au bureau si j'ai un rhume?
 - Pourquoi le confinement ?
 - Dois-je rester à la maison?
 - Rester à la maison aide contre le corona?
@@ -590,26 +541,6 @@
 - Où puis-je voyager ?
 
 ## intent:covid_treatments_fr
-- Le froid tue-t-il le COVID-19 ?
-- Est-ce que les recherches sur le Covid ont déjà aboutis?
-- Peut-on guérir du COVID-19 ?
-- Y a-t-il quelque chose qui guérisse du corona?
-- Y a-t-il un remède contre le corona ?
-- Quel est le remède contre le COVID-19 ?
-- Quelqu'un a-t-il trouvé un remède contre le coronavirus ?
-- Y a-t-il un remède contre le COVID-19 ?
-- Un remède contre le corona a-t-il été trouvé ?
-- Existe-t-il un remède contre la couronne?
-- Puis-je prendre des antibiotiques contre Covid?
-- Existe-t-il des médicaments pour soigner la maladie?
-- Puis-je prendre des médicaments pour prévenir la couronne?
-- Que dois-je faire si je pense avoir une couronne?
-- Les gens peuvent-ils se remettre du virus corona?
-- Les gens peuvent-ils guérir du virus corona?
-- Aurai-je le COVID-19 pour toujours?
-- Quels vaccins contre le corona sont disponibles ?
-- Les vaccins sont-ils efficaces pour tuer le corona ?
-- Est-il vrai que les vaccins neutralisent le coronavirus ?
 - Comment traiter la maladie du coronavirus?
 - Comment traite t'on le covid-19
 - Bonjour, comment traite t'on le covid-19
@@ -653,15 +584,6 @@
 - Quelle est la différence entre COVID-19 et coronavirus ?
 - Qu'est-ce que c'est corona?
 - Qu'est-ce que c'est covid-19?
-
-## intent:covid_why_distancing_fr
-- Pourquoi devrions-nous garder nos distances
-- Pourquoi la distanciation sociale
-- Quel est l'intérêt de rester à l'écart des autres
-- Pourquoi gardons-nous nos distances
-- Qu'est-ce que la distanciation
-- Est-ce que garder mes distances empêchera la maladie?
-- Pourquoi il faut garder ses distances?
 
 ## intent:deny_fr
 - non
@@ -734,17 +656,13 @@
 - La femme qui allaite peut elle transmettre le virus au bébé ?
 
 ## intent:request_for_french_fr
-- J'ai déja dit!
-- C'est la troisième fois
 - Francais svp
 - Francais
 - Quoi?
-- Je ne parle pas le Kiswahili
 - Je ne comprends pas le swahili
 - Vous comprenez le francais?
 - Vous pouvez parler francais?
 - Puis-je avoir la réponse en français svp
-- Vous me comprenez pas!
 
 ## intent:user_says_thanks_fr
 - Merci
@@ -759,7 +677,6 @@
 - Comment vous appellent-ils?
 - Quel nom as-tu?
 - Comment tes amis t'apellent-ils?
-- 
 - Comment t'ont-ils appelé?
 
 ## intent:where_do_you_live_fr
@@ -808,14 +725,6 @@
 - Uchunguzi katika Ituri?
 - Uchunguzi katika Ituri?
 - Uchunguzi katika Ituri?
-- Batu bangapi biko na corona mu ville yetu?
-- Batu bangapi biko na corona mu province yetu?
-- Tuko na bagonjwa bangapi ba corona?
-- Bangapi banagonjwa corona uku?
-- Bangapi biko na corona uku?
-- Tunaweza kuwa na bagonjwa ngapi ba corona kwa sasa?
-- Ivi tulishafika ku bagonjwa bangapi ba corona?
-- tushakuwa na batu ngapi benye banagonjwa corona?
 
 ## intent:ask_for_stats_sw
 - Je! Ni takwimu za sasa za COVID-19 za DRC?
@@ -849,18 +758,6 @@
 - Hauongeyake kifaransa?
 - Unaongeyaka kifaransa?
 - Misikusikiye
-- Unaongea luga ngapi?
-- Unaongea luga gani na gani?
-- unasemaka luga ngapi?
-- unaelewaka luga gani?
-- unasikiyaka luga gani?
-- unaelewa luga ya aye?
-- unasemaka kiswahili?
-- unaelewa kiswahili ao kifaransa
-- unazungumza luga gani?
-- unazungumza swahili?
-- unazungumza kifaransa na kiswahili?
-- unaongeyaka kiswahili ao kifaransa?
 
 ## intent:covid_anxiety_sw
 - Boga ya namna gani minapashwa kuwa nayo ju ya virusi ya corona?
@@ -872,13 +769,13 @@
 - Minapashwa kuwa na boga ju ya virusi ya corona?
 
 ## intent:covid_call_a_doctor_sw
-- Je! Ninaweza kupimwa wapi?
-- Nifanye nini kama nina dalili?
-- Nina kavu kikohozi na homa
-- Lazima mimi wito daktari?
-- Nataka kupata mtihani
-- Wakati anatakiwa kupata mtihani?
-- Ningependa kujaribu mtoto wangu.
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 
 ## intent:covid_children_stress_sw
 - Namna gani naweza kuweka watoto kimia wakati wa COVID-19?
@@ -928,17 +825,6 @@
 - Minapashwa vala ma gants kwa kujilinda ku COVID?
 - Ma gants zinaweza zuia corona?
 - Kuvala ma gants ni ya lazima?
-- ma gants zineza tuma sipate virusi ya corona?
-- ma gants zinaweza nilinda na virusi ya corona?
-- minapashwa vala ma gants juu nisipate corona?
-- ma gants zineza saidiya aye ku corona?
-- ma gants ni za muzuri kwa kujikinga na corona?
-- aye njo ma gants zinaweza saidiya kusipopata corona?
-- ma gants zinaweza uwa virusi ya corona?
-- nikivala ma gants sitapata corona?
-- kama minavala ma gants siwezi pata corona?
-- ma gants zinasaidiya kuepuka corona ao ni zakufanya nini?
-- ma gants ziko na kazi gani ku corona?
 
 ## intent:covid_hospital_sw
 - Je! Niende hospitalini ikiwa nina corona?
@@ -970,6 +856,11 @@
 - Incubation ni nini?
 - Kipindi ya incubation (Kuotoka ku suiku ya maambukizi mbaka ku siku ma halama za ugonjwa zina anza onekana) ni gani?
 
+## intent:covid_infected_life_sw
+- Batu banaweza pona ugonjwa ya virusi ya corona?
+- Je! Watu wanaweza kupona kutoka kwa coronavirus?
+- Naweza kuwa na COVID-19 milele?
+
 ## intent:covid_infection_likelihood_sw
 - Ku kiasi gani niko mu hatari ya kupata virusi ya corona?
 - Ndapata COVID-19?
@@ -998,16 +889,12 @@
 - Minapashwa kujitenga?
 - Kujitenga inamaanisha nini?
 - Minaweza kujitenga namna gani?
+- Kubaki mbali ya watu inaweza tuma sipate corona?
 - Kwa muda gani minapashwa baki mbali na watu wengine kama niko na virusi ya corona?
 
 ## intent:covid_masks_availability_sw
-- Naweza kuuziya mask fasi gani?
-- Naweza kununulia mask fasi gani?
-- Ndapata mask wapi?
-- Naweza kuvala mask moya mara ngapi?
 - Naweza kupata wapi mask?
 - Naweza kupata wapi mask?
-- Je! Ninaweza kununua mask hapa Goma?
 - Je! Ninaweza kununua masks ndani ya nchi?
 - Je! Kuna masks hospitalini?
 - Je! Serikali itatupa masks wote?
@@ -1025,10 +912,6 @@
 - Minaweza zuia maambukzi ya virusi ya corona niki vala mask?
 
 ## intent:covid_masks_effectiveness_sw
-- Napashwa kuvala mask ya aina gani?
-- Mwenye anavala mask hawezi pata corona?
-- Mask inasaidiya kunini?
-- Mask inawezatuma misita pata virusi ya corona?
 - Ma mask zinaweza zuia COVID-19?
 - Ma mask zinaweza zuia COVID-19?
 - Mask inaweza nikinga kupata virusi ya corona?
@@ -1039,11 +922,6 @@
 - Je! Kuvaa mask kunanizuia kupata korona?
 
 ## intent:covid_masks_how_to_sw
-- Jinsi ya kuvaa mask
-- Mask yenyi ilitengenezwa hapa nyumbani njo ya mzuri ao ya kutoka mu inchi zingine?
-- Minapashwa vala mask kila siku?
-- Namna gani minapashwa vala mask?
-- Aye njo gisi ya kuvala mask?
 - Je! Mimi huvaa mask?
 - Je! Ni ipi njia sahihi ya kuvaa mask?
 - Nionyeshe jinsi ya kutumia mask
@@ -1084,15 +962,19 @@
 - Neige inaweza uwa corona?
 - Ni hali gani ya hewa njo ya mubaya kwa COVID-19?
 - virusi ya corona inaweza kufa mu neige?
+- Hali ya hewa ya baridi inaweza uwa COVID-19?
 - Corona inaweza kuishi katika hali ya hewa yoyote?
 - Baridi inaweza kuzuia corona?
 
-## intent:covid_myth_drink_sw
-- Je! Kunywa ethanol huua virusi
-- Je! Kunywa dawa ya kuua kuua kuua corona
-- Je! Kunywa methanoli kuua virusi
-- Je! Ninaweza kunywa bichi au dawa ya kuua virusi
-- Je! Kuna kemikali ninayoweza kunywa kuua virusi?
+## intent:covid_myth_cure_sw
+- Je! Utafiti umepata tiba ya Covid-19?
+- Watu wanaweza kupona COVID-19?
+- Kuna kitu chochote kienye kinaweza ponesha virusi ya corona?
+- corona iko na dawa?
+- Dawa ya COVID-19 ni nini?
+- Kuko mtu mwenye alishapata dawa ya virusi ya corona?
+- kuko dawa ya COVID-19?
+- Dawa ya corona imepatikana?
 
 ## intent:covid_myth_drink_alcohol_sw
 - Je! Pombe inamponya corona?
@@ -1100,16 +982,6 @@
 - Je! Ninaweza kunywa pombe dhidi ya ugonjwa?
 - Je! Pombe ni tiba ya covid?
 - Je! Ninapaswa kunywa pombe kuzuia corona?
-- Niki kunywa pombe siwezi kupata corona?
-- Pombe iki na uwezo ya kunikinga na corona?
-- Pombe inaweza uwa corona?
-- Pombe iko na ujwezo ao nguvu ya kuzuia virusi ya corona?
-- Minapashwa kunywa pombe ju nisipate corona?
-- Pombe inaweza niponesha corona?
-- Pombe ni ya lazima mu mwili ju inikinge ku corona?
-- Ni lazima kukunywa pombe ju nisipate corona?
-- Kama minakunywa pombe misitapata corona?
-- Pombe ni ya mzuri ku mtu mwenye anapenda kujikinga na corona?
 
 ## intent:covid_myth_flies_sw
 - Inzi zina corona?
@@ -1117,19 +989,6 @@
 - Inzi zinaweza kupata ugonjwa?
 - Je! Napaswa kukaa mbali na nzi?
 - Inawezekana kupata ugonjwa kutoka kwa nzi?
-
-## intent:covid_myth_fruits_sw
-- Kitika inaweza zuia corona?
-- Kitika inaweza tuma misipate corona?
-- Kitika inaweza nitunza kama niko na corona?
-- Kitika ni ya lazima ku mutu mwenye iko na virusi ya corona?
-- niki kula kitika siwezi pata corona?
-- Kukula orange inaweza tuma sipate corona?
-- Nikikula citron sitapata corona?
-- Citron na orange binaweza nikinga ku corona? 
-- Kama minakula ma tunda sitapata corona?
-- Niki kula matunda za mingi sitapata corona?
-- Corona inaweza pona kama minakula ma citron?
 
 ## intent:covid_myth_garlic_sw
 - Naweza kutumia ayi kama njia ya kujikinga mwenyewe na virusi ya corona?
@@ -1175,6 +1034,13 @@
 - Kunawa mwili mzima inaweza zuia virusi ya corona?
 - Naweza kuzuia COVID-19 niki nawa mwili mzima?
 
+## intent:covid_myth_medicine_sw
+- Je! Kuna tiba ya korona?
+- Je! Ninaweza kuchukua dawa yoyote dhidi ya covid?
+- Je! Kuna dawa yoyote ya kutibu ugonjwa?
+- Je! Ninaweza kuchukua dawa yoyote kuzuia corona?
+- Nifanye nini ikiwa nadhani nina corona?
+
 ## intent:covid_myth_mosquitos_sw
 - Ni kweli kwamba unaweza kupata corona kupitia imbu?
 - kulumiwa na imbu inaweza kuwa amo corona?
@@ -1194,9 +1060,13 @@
 - Batoto biko na ukingo ku corona?
 
 ## intent:covid_myth_other_vaccines_sw
+- Chanjo gani ninaweza kupata juya kuepuka corona?
+- Chanjo iko na uwezo ya kuuwa corona?
+- Ni kweli kwamba chanjo inaweza zuia virusi ya corona?
 - Chanjo ya ugonjwa ya mafafa inaweza zuia maambukizi ya corona?
 - Naweza kutumikisha chanjo ya ugonjwa ya mafafa kuzuia COVID-19?
 - Ni lazima nipate chanjo ya ugonjwa ya mafafa?
+- Chanjo iko na uwezo ya kuuwa corona?
 - Chanjo zingine zinaweza kuzuia virusi ya corona?
 
 ## intent:covid_myth_phone_signals_sw
@@ -1309,8 +1179,6 @@
 - Corona na Virusi ingine inayoitwa SARS ni bimoya?
 
 ## intent:covid_stay_at_home_sw
-- Kubaki mbali ya watu inaweza tuma sipate corona?
-- Lazima mimi kuepuka kwenda ofisi kama nina baridi?
 - Je! Ni kwanini nibaki nyumbani?
 - Minapashwa baki nyumbani?
 - Kubaki nyumbani inasaidiya kuzuia corona
@@ -1361,26 +1229,6 @@
 - Wapi naweza kusafiri?
 
 ## intent:covid_treatments_sw
-- Hali ya hewa ya baridi inaweza uwa COVID-19?
-- Je! Utafiti umepata tiba ya Covid-19?
-- Watu wanaweza kupona COVID-19?
-- Kuna kitu chochote kienye kinaweza ponesha virusi ya corona?
-- corona iko na dawa?
-- Dawa ya COVID-19 ni nini?
-- Kuko mtu mwenye alishapata dawa ya virusi ya corona?
-- kuko dawa ya COVID-19?
-- Dawa ya corona imepatikana?
-- Je! Kuna tiba ya korona?
-- Je! Ninaweza kuchukua dawa yoyote dhidi ya covid?
-- Je! Kuna dawa yoyote ya kutibu ugonjwa?
-- Je! Ninaweza kuchukua dawa yoyote kuzuia corona?
-- Nifanye nini ikiwa nadhani nina corona?
-- Batu banaweza pona ugonjwa ya virusi ya corona?
-- Je! Watu wanaweza kupona kutoka kwa coronavirus?
-- Naweza kuwa na COVID-19 milele?
-- Chanjo gani ninaweza kupata juya kuepuka corona?
-- Chanjo iko na uwezo ya kuuwa corona?
-- Ni kweli kwamba chanjo inaweza zuia virusi ya corona?
 - Namna gani ku tunza magonjwa ya Corona virus?
 - Banaweza kutunza covid-19 aye?
 - Jambo, banaweza kutunza covid-19 aye?
@@ -1424,15 +1272,6 @@
 - Tafauti kati ya COVID-19 na virusi ya corona ni nini?
 - Corona ni nini?
 - Covid-19 ni nini?
-
-## intent:covid_why_distancing_sw
-- Kwanini tunapaswa kuweka umbali wetu
-- kujiweka mbali nini jamii
-- Je! Ni nini hatua ya kukaa mbali na wengine
-- Kwanini tunaweka umbali wetu
-- Ni nini kinachoongoza
-- Je! Kuweka umbali wangu kuzuia ugonjwa?
-- Kwanini unapaswa kuweka umbali wako?
 
 ## intent:deny_sw
 - Hapana
@@ -1505,17 +1344,13 @@
 - Je! Wanawake wa kunyonyesha wanaweza kupitisha virusi kwa watoto?
 
 ## intent:request_for_french_sw
-- 
-- 
 - Kifaransa Tafadhali
 - Kifaransa
 - Nini?
-- Sizungumzi Kiswahili
 - Sielewi kiswahili
 - Unaelewa Kifaransa?
 - Unaweza kusema Kifaransa?
 - Ninaweza kupata jibu kwa Kifaransa tafadhali
-- 
 
 ## intent:user_says_thanks_sw
 - Asante
@@ -1530,7 +1365,6 @@
 - Wanakuita nini?
 - Una jina gani?
 - Je! Marafiki wako wanakuita nini?
-- Jina yako ni nani?
 - Je! Walikuita nini?
 
 ## intent:where_do_you_live_sw
