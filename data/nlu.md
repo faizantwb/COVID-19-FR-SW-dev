@@ -168,10 +168,24 @@
 - Quelle est la signification de l'incubation?
 - Quelle est la période d'incubation?
 
-## intent:covid_infected_life_fr
+## intent:covid_treatments_fr
 - Les gens peuvent-ils se remettre du virus corona?
 - Les gens peuvent-ils guérir du virus corona?
 - Aurai-je le COVID-19 pour toujours?
+- Quels vaccins contre le corona sont disponibles ?
+- Les vaccins sont-ils efficaces pour tuer le corona ?
+- Est-il vrai que les vaccins neutralisent le coronavirus ?
+- Comment traiter la maladie du coronavirus?
+- Comment traite t'on le covid-19
+- Bonjour, comment traite t'on le covid-19
+- Quels traitements puis-je suivre pour me prémunir contre le coronavirus ou en guérir ?
+- Quels médicaments puis-je prendre contre le COVID-19 ?
+- Existe-t-il des thérapies pour arrêter le COVID-19 ?
+- Puis-je prendre des médicaments pour me prémunir contre le corona ou en guérir ?
+- Y a-t-il un vaccin contre le corona ?
+- Y a-t-il quelque chose qui puisse arrêter l'évolution du coronavirus ?
+- Existe-t-il un médicament qui guérisse ou empêche la contamination du corona ?
+- J'aimerais savoir quand il y aura un vaccin.
 
 ## intent:covid_infection_likelihood_fr
 - Quelles sont mes chances d'attraper le coronavirus ?
@@ -207,6 +221,7 @@
 ## intent:covid_masks_availability_fr
 - Où puis-je me procurer un masque?
 - Où puis-je trouver un masque?
+- Je peux acheter un masque ici a Goma?
 - Puis-je acheter des masques localement?
 - Y a-t-il des masques à l'hôpital?
 - Le gouvernement nous donnera-t-il tous les masques?
@@ -372,13 +387,9 @@
 - Les enfants sont-ils immunisés contre le corona ?
 
 ## intent:covid_myth_other_vaccines_fr
-- Quels vaccins contre le corona sont disponibles ?
-- Les vaccins sont-ils efficaces pour tuer le corona ?
-- Est-il vrai que les vaccins neutralisent le coronavirus ?
 - Le vaccin contre la pneumonie peut-il empêcher l'infection au corona ?
 - Puis-je utiliser le vaccin contre la pneumonie pour éviter d'attraper le COVID-19 ?
 - Devrais-je me faire vacciner contre la pneumonie ?
-- 
 - D'autres vaccins protègent-ils du coronavirus ?
 
 ## intent:covid_myth_phone_signals_fr
@@ -540,19 +551,6 @@
 - Puis-je encore voyager ?
 - Où puis-je voyager ?
 
-## intent:covid_treatments_fr
-- Comment traiter la maladie du coronavirus?
-- Comment traite t'on le covid-19
-- Bonjour, comment traite t'on le covid-19
-- Quels traitements puis-je suivre pour me prémunir contre le coronavirus ou en guérir ?
-- Quels médicaments puis-je prendre contre le COVID-19 ?
-- Existe-t-il des thérapies pour arrêter le COVID-19 ?
-- Puis-je prendre des médicaments pour me prémunir contre le corona ou en guérir ?
-- Y a-t-il un vaccin contre le corona ?
-- Y a-t-il quelque chose qui puisse arrêter l'évolution du coronavirus ?
-- Existe-t-il un médicament qui guérisse ou empêche la contamination du corona ?
-- J'aimerais savoir quand il y aura un vaccin.
-
 ## intent:covid_wash_hands_frequency_fr
 - se laver les mains
 - Que dois-je faire tous les jours ?
@@ -677,6 +675,7 @@
 - Comment vous appellent-ils?
 - Quel nom as-tu?
 - Comment tes amis t'apellent-ils?
+- 
 - Comment t'ont-ils appelé?
 
 ## intent:where_do_you_live_fr
@@ -686,6 +685,13 @@
 - Tu es d'ici?
 - Tu es aussi d'ici?
 - Tu es où maintenant?
+
+## intent:covid_myth_fruits_fr
+- Les bananes peuvent-elles guérir Covid-19?
+- Les bananes sont-elles un remède contre le coronavirus
+- Les bananes sont-elles un remède?
+- Puis-je manger des bananes pour traiter Corona?
+- Puis-je manger des bananes pour me protéger
 
 ## intent:affirm_sw
 - ndio
@@ -856,10 +862,24 @@
 - Incubation ni nini?
 - Kipindi ya incubation (Kuotoka ku suiku ya maambukizi mbaka ku siku ma halama za ugonjwa zina anza onekana) ni gani?
 
-## intent:covid_infected_life_sw
+## intent:covid_treatments_sw
 - Batu banaweza pona ugonjwa ya virusi ya corona?
 - Je! Watu wanaweza kupona kutoka kwa coronavirus?
 - Naweza kuwa na COVID-19 milele?
+- Chanjo gani ninaweza kupata juya kuepuka corona?
+- Chanjo iko na uwezo ya kuuwa corona?
+- Ni kweli kwamba chanjo inaweza zuia virusi ya corona?
+- Namna gani ku tunza magonjwa ya Corona virus?
+- Banaweza kutunza covid-19 aye?
+- Jambo, banaweza kutunza covid-19 aye?
+- Matunzo gani minaweza fwata kwa kuzuia ao kuponesha virusi ya corona?
+- Dawa gani minaweza kunywa ya kuzuia COVID-19?
+- kuko njia yoyote ya kuzuia COVID-19?
+- Naweza kunywa dawa yoyote ya kuzuia ao ya kuponesha corona?
+- Kuko chanjo ya corona?
+- Kuko kitu yoyte ya kuzuia virusi ya corona?
+- Kuko dawa yoyote yenyi inaweza ponesha ao zuia corona?
+- Napenda kujua ni lini kitakuwa na chanjo.
 
 ## intent:covid_infection_likelihood_sw
 - Ku kiasi gani niko mu hatari ya kupata virusi ya corona?
@@ -895,6 +915,7 @@
 ## intent:covid_masks_availability_sw
 - Naweza kupata wapi mask?
 - Naweza kupata wapi mask?
+- Je! Ninaweza kununua mask hapa Goma?
 - Je! Ninaweza kununua masks ndani ya nchi?
 - Je! Kuna masks hospitalini?
 - Je! Serikali itatupa masks wote?
@@ -1060,13 +1081,9 @@
 - Batoto biko na ukingo ku corona?
 
 ## intent:covid_myth_other_vaccines_sw
-- Chanjo gani ninaweza kupata juya kuepuka corona?
-- Chanjo iko na uwezo ya kuuwa corona?
-- Ni kweli kwamba chanjo inaweza zuia virusi ya corona?
 - Chanjo ya ugonjwa ya mafafa inaweza zuia maambukizi ya corona?
 - Naweza kutumikisha chanjo ya ugonjwa ya mafafa kuzuia COVID-19?
 - Ni lazima nipate chanjo ya ugonjwa ya mafafa?
-- Chanjo iko na uwezo ya kuuwa corona?
 - Chanjo zingine zinaweza kuzuia virusi ya corona?
 
 ## intent:covid_myth_phone_signals_sw
@@ -1228,19 +1245,6 @@
 - Ningali ndeza safiri?
 - Wapi naweza kusafiri?
 
-## intent:covid_treatments_sw
-- Namna gani ku tunza magonjwa ya Corona virus?
-- Banaweza kutunza covid-19 aye?
-- Jambo, banaweza kutunza covid-19 aye?
-- Matunzo gani minaweza fwata kwa kuzuia ao kuponesha virusi ya corona?
-- Dawa gani minaweza kunywa ya kuzuia COVID-19?
-- kuko njia yoyote ya kuzuia COVID-19?
-- Naweza kunywa dawa yoyote ya kuzuia ao ya kuponesha corona?
-- Kuko chanjo ya corona?
-- Kuko kitu yoyte ya kuzuia virusi ya corona?
-- Kuko dawa yoyote yenyi inaweza ponesha ao zuia corona?
-- Napenda kujua ni lini kitakuwa na chanjo.
-
 ## intent:covid_wash_hands_frequency_sw
 - Nawa mikono
 - Napashwa fanya nini kila siku?
@@ -1365,6 +1369,7 @@
 - Wanakuita nini?
 - Una jina gani?
 - Je! Marafiki wako wanakuita nini?
+- Jina yako ni nani?
 - Je! Walikuita nini?
 
 ## intent:where_do_you_live_sw
@@ -1374,4 +1379,11 @@
 - Wewe ni kutoka hapa?
 - Je! Wewe pia unatoka hapa?
 - Uko wapi sasa?
+
+## intent:covid_myth_fruits_sw
+- Kitika inaweza zuia corona?
+- Kitika inaweza tuma misipate corona?
+- Kitika inaweza nitunza kama niko na corona?
+- Kitika ni ya lazima ku mutu mwenye iko na virusi ya corona?
+- niki kula kitika siwezi pata corona?
 
