@@ -70,19 +70,45 @@ class FirstTimeForm(FormAction):
     def required_slots(tracker: Tracker) -> List[Text]:
 
         if tracker.get_slot("first_time") == True:
-            return["first_time","given_name","location"]
+            return["first_time", "given_name", "location"]
         else:
             return["first_time"]
 
-    def slot_mappings(self) -> Text:
+    def slot_mappings(self) -> Dict[str, Union[Dict[str, Any], List[Dict[str, Any]]]]:
+
         return {
-        "first_time": [
-            self.from_intent(intent="affirm", value=True),
-            self.from_intent(intent="deny", value=False)
+            "first_time": [
+                self.from_intent(intent="affirm", value=True),
+                self.from_intent(intent="deny", value=False)
             ],
-        "given_name": self.from_text(),
-        "location": self.from_text()
+            "given_name": [
+                self.from_entity(entity="entity_given_name", intent="name_entry"),
+                self.from_intent(intent="deny", value=False),
+                self.from_intent(intent="ask_again", value="ask again")
+                #self.from_text(intent="name_entry")
+            ],
+            "location": self.from_text()
         }
+
+    def validate_given_name(
+            self,
+            value: Text,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any],
+    ) -> Dict[Text, Any]:
+        """Validate value."""
+        if value == False:
+            dispatcher.utter_message(template="utter_thats_fine")
+            return {"given_name": ""}
+
+        elif value =="ask again":
+            dispatcher.utter_message(template="utter_your_first_name")
+            return {"given_name": None}
+
+        else:
+            dispatcher.utter_message(template="utter_we_have_what_we_need")
+            return {"given_name": value}
 
     def submit(
         self,
@@ -93,7 +119,6 @@ class FirstTimeForm(FormAction):
         if tracker.get_slot("first_time") == False:
             dispatcher.utter_message(template="utter_welcome_back")
         else:
-#            dispatcher.utter_message(template="utter_greet")
             dispatcher.utter_message(template="utter_greet_with_name")
         return[]
 
