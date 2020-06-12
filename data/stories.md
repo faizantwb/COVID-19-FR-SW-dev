@@ -2,18 +2,15 @@
 * greet
   - utter_greet
   - utter_get_informed_consent
-  <!-- ask if they've been here before -->
   - first_time_form
   - form{"name": "first_time_form"}
   - form{"name": null}
   - utter_set_expectations
-  <!-- some kind of conversation happen here -->
 * ask_four_language_questions
   - utter_introduce_survey
   - language_questions_form
   - form{"name": "language_questions_form"}
   - form{"name": null}
-  <!-- more conversation -->
   - utter_anything_else_question
 * goodbye
   - feedback_form
@@ -196,9 +193,6 @@
 * fallback
  - utter_answer_fallback
 
-<!-- ## answergoodbye
-* goodbye
- - utter_answer_goodbye -->
 
 ## answergreeting
 * greet
