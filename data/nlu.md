@@ -1,3 +1,19 @@
+
+## intent:affirm_fr
+- Oui
+- 👍
+- En effet
+- OK
+- ok
+- d'accord
+- bien sûr
+- ça sonne bien
+- correct
+- sûr
+- Oui, c'est la premiere fois.
+- Oui, c'est ma premiere fois de parler avec vous.
+- Oui. Comment ca marche?
+
 ## intent:answer_is_wrong_fr
 - Ça n'a pas de sens
 - Ce n'est pas une bonne réponse
