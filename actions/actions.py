@@ -17,38 +17,27 @@ from typing import Dict, Text, Any, List, Union
 import json
 import requests
 
-class ActionGetIssueDetails(Action):
+class FirstTimeFormFR(FormAction):
 
     def name(self) -> Text:
-        return "action_get_issue_details"
-
-    @staticmethod
-    def required_slots(tracker: Tracker) -> List[Text]:
-        """A list of required slots that the form has to fill"""
-
-        return ["issue_type","issue_detail"]
-
-
-    def submit(self,
-            dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        dispatcher.utter_message(template="utter_submit")
-
-class ContactDetailsForm(FormAction):
-
-    def name(self) -> Text:
-        return "contact_details_form"
+        return "form_first_time_fr"
 
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:
 
-        return["name"]
+        if tracker.get_slot("first_time_fr") == True:
+            return["first_time_fr","given_name_fr","location_fr"]
+        else:
+            return["first_time_fr"]
 
     def slot_mappings(self) -> Text:
         return {
-        "name": self.from_text(intent=None)
+        "first_time_fr": [
+            self.from_intent(intent="affirm_fr", value=True),
+            self.from_intent(intent="deny_fr", value=False)
+            ],
+        "given_name_fr": self.from_text(),
+        "location_fr": self.from_text()
         }
 
     def submit(
@@ -57,58 +46,35 @@ class ContactDetailsForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict]:
-        dispatcher.utter_message(template="utter_greet_with_name")
+        if tracker.get_slot("first_time_fr") == False:
+            dispatcher.utter_message(template="utter_welcome_back_fr")
+        else:
+#            dispatcher.utter_message(template="utter_greet")
+            dispatcher.utter_message(template="utter_greet_with_name_fr")
         return[]
 
-
-class FirstTimeForm(FormAction):
+class FirstTimeFormSW(FormAction):
 
     def name(self) -> Text:
-        return "first_time_form"
+        return "form_first_time_sw"
 
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:
 
-        if tracker.get_slot("first_time") == True:
-            return["first_time", "given_name", "location"]
+        if tracker.get_slot("first_time_sw") == True:
+            return["first_time_sw","given_name_sw","location_sw"]
         else:
-            return["first_time"]
+            return["first_time_sw"]
 
-    def slot_mappings(self) -> Dict[str, Union[Dict[str, Any], List[Dict[str, Any]]]]:
-
+    def slot_mappings(self) -> Text:
         return {
-            "first_time": [
-                self.from_intent(intent="affirm", value=True),
-                self.from_intent(intent="deny", value=False)
+        "first_time_sw": [
+            self.from_intent(intent="affirm_sw", value=True),
+            self.from_intent(intent="deny_sw", value=False)
             ],
-            "given_name": [
-                self.from_entity(entity="entity_given_name", intent="name_entry"),
-                self.from_intent(intent="deny", value=False),
-                self.from_intent(intent="ask_again", value="ask again")
-                #self.from_text(intent="name_entry")
-            ],
-            "location": self.from_text()
+        "given_name_sw": self.from_text(),
+        "location_sw": self.from_text()
         }
-
-    def validate_given_name(
-            self,
-            value: Text,
-            dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any],
-    ) -> Dict[Text, Any]:
-        """Validate value."""
-        if value == False:
-            dispatcher.utter_message(template="utter_thats_fine")
-            return {"given_name": ""}
-
-        elif value =="ask again":
-            dispatcher.utter_message(template="utter_your_first_name")
-            return {"given_name": None}
-
-        else:
-            dispatcher.utter_message(template="utter_we_have_what_we_need")
-            return {"given_name": value}
 
     def submit(
         self,
@@ -116,34 +82,34 @@ class FirstTimeForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict]:
-        if tracker.get_slot("first_time") == False:
-            dispatcher.utter_message(template="utter_welcome_back")
+        if tracker.get_slot("first_time_sw") == False:
+            dispatcher.utter_message(template="utter_welcome_back_sw")
         else:
-            dispatcher.utter_message(template="utter_greet_with_name")
+#            dispatcher.utter_message(template="utter_greet")
+            dispatcher.utter_message(template="utter_greet_with_name_sw")
         return[]
 
-
-class FeedbackForm(FormAction):
+class FeedbackFormFR(FormAction):
 
     def name(self) -> Text:
-        return "feedback_form"
+        return "form_feedback_fr"
 
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:
 
         # if the answer to "Did we do OK?" is no...
-        if tracker.get_slot("feedback") == False:
-            return["feedback", "feedback_reason"]
+        if tracker.get_slot("feedback_fr") == False:
+            return["feedback_fr", "feedback_reason_fr"]
         else:
-            return["feedback"]
+            return["feedback_fr"]
 
     def slot_mappings(self) -> Text:
         return {
-        "feedback": [
-            self.from_intent(intent="affirm", value=True),
-            self.from_intent(intent="deny", value=False)
+        "feedback_fr": [
+            self.from_intent(intent="affirm_fr", value=True),
+            self.from_intent(intent="deny_fr", value=False)
             ],
-        "feedback_reason": self.from_text()
+        "feedback_reason_fr": self.from_text()
         }
 
     def submit(
@@ -152,41 +118,30 @@ class FeedbackForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict]:
-        dispatcher.utter_message(template="utter_thanks_for_your_feedback")
+        dispatcher.utter_message(template="utter_thanks_for_your_feedback_fr")
         return[]
 
-class LanguageQuestionsForm(FormAction):
+class FeedbackFormSW(FormAction):
 
     def name(self) -> Text:
-        return "language_questions_form"
+        return "form_feedback_sw"
 
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:
 
         # if the answer to "Did we do OK?" is no...
-        if tracker.get_slot("willing_to_do_language_survey") == True:
-            return[
-                    "willing_to_do_language_survey",
-                    "language_at_home",
-                    "language_for_written_comms",
-                    "language_for_verbal_comms",
-                    "preferred_channel"
-                    ]
+        if tracker.get_slot("feedback_sw") == False:
+            return["feedback_sw", "feedback_reason_sw"]
         else:
-            return["willing_to_do_language_survey"]
-
-#        return["willing_to_do_survey","language_at_home","language_for_written_comms","language_for_verbal_comms","preferred_channel"]
+            return["feedback_sw"]
 
     def slot_mappings(self) -> Text:
         return {
-        "willing_to_do_language_survey": [
-            self.from_intent(intent="affirm", value=True),
-            self.from_intent(intent="deny", value=False)
-        ],
-        "language_at_home": self.from_text(),
-        "language_for_written_comms": self.from_text(),
-        "language_for_verbal_comms": self.from_text(),
-        "preferred_channel": self.from_text()
+        "feedback_sw": [
+            self.from_intent(intent="affirm_sw", value=True),
+            self.from_intent(intent="deny_sw", value=False)
+            ],
+        "feedback_reason_sw": self.from_text()
         }
 
     def submit(
@@ -195,26 +150,22 @@ class LanguageQuestionsForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict]:
-        if tracker.get_slot("willing_to_do_language_survey") == True:
-            dispatcher.utter_message(template="utter_thanks_for_your_feedback")
-        else:
-            dispatcher.utter_message(text="OK, that's fine! How can I help you?")
+        dispatcher.utter_message(template="utter_thanks_for_your_feedback_sw")
         return[]
 
-
-class MythSourceForm(FormAction):
+class LanguageQuestionsFormFR(FormAction):
 
     def name(self) -> Text:
-        return "myth_source_form"
+        return "form_language_questions_fr"
 
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:
 
-        return["myth_source"]
+        return["language_at_home_fr"]
 
     def slot_mappings(self) -> Text:
         return {
-        "myth_source": self.from_text()
+        "language_at_home_fr": self.from_text()
         }
 
     def submit(
@@ -223,14 +174,86 @@ class MythSourceForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict]:
-        dispatcher.utter_message(template="utter_thanks_for_your_feedback")
+        dispatcher.utter_message(template="utter_get_back_on_topic_fr")
+        return[]
+
+class LanguageQuestionsFormSW(FormAction):
+
+    def name(self) -> Text:
+        return "form_language_questions_sw"
+
+    @staticmethod
+    def required_slots(tracker: Tracker) -> List[Text]:
+
+        return["language_at_home_sw"]
+
+    def slot_mappings(self) -> Text:
+        return {
+        "language_at_home_sw": self.from_text()
+        }
+
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        dispatcher.utter_message(template="utter_get_back_on_topic_sw")
         return[]
 
 
-class ActionGetInfectionStats(Action):
+class MythSourceFormFR(FormAction):
 
     def name(self) -> Text:
-        return "action_get_infection_stats"
+        return "form_myth_source_fr"
+
+    @staticmethod
+    def required_slots(tracker: Tracker) -> List[Text]:
+
+        return["myth_source_fr"]
+
+    def slot_mappings(self) -> Text:
+        return {
+        "myth_source_fr": self.from_text()
+        }
+
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        dispatcher.utter_message(template="utter_thanks_for_your_feedback_fr")
+        return[]
+
+class MythSourceFormSW(FormAction):
+
+    def name(self) -> Text:
+        return "form_myth_source_sw"
+
+    @staticmethod
+    def required_slots(tracker: Tracker) -> List[Text]:
+
+        return["myth_source_sw"]
+
+    def slot_mappings(self) -> Text:
+        return {
+        "myth_source_sw": self.from_text()
+        }
+
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        dispatcher.utter_message(template="utter_thanks_for_your_feedback_sw")
+        return[]
+
+class ActionGetInfectionStatsFR(Action):
+
+    def name(self) -> Text:
+        return "action_get_infection_stats_fr"
 
     def run(self,
             dispatcher: CollectingDispatcher,
@@ -250,8 +273,52 @@ class ActionGetInfectionStats(Action):
         #get the bits of the response we want
         active = response_JSON['response'][0]['cases']['active']
         new = response_JSON['response'][0]['cases']['new']
+        new_deaths = response_JSON['response'][0]['deaths']['new']
+        total_deaths = response_JSON['response'][0]['deaths']['total']
 
-        dispatcher.utter_message(template="utter_infection_stats", active = active, new = new, country = country)
+        dispatcher.utter_message(template="utter_get_infection_stats_fr",
+                                 active = active,
+                                 new = new,
+                                 country = country,
+                                 new_deaths = new_deaths,
+                                 total_deaths = total_deaths
+                                 )
+
+        return []
+
+class ActionGetInfectionStatsSW(Action):
+
+    def name(self) -> Text:
+        return "action_get_infection_stats_sw"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # this is where to paste the call to API
+        country = "DRC"
+        url = "https://covid-193.p.rapidapi.com/statistics"
+        headers = { 'x-rapidapi-host': "covid-193.p.rapidapi.com", 'x-rapidapi-key': "c41cd0c62dmshb99d2fb0a63207dp1775a0jsna4f33aea1040"}
+        query_string = {"country":country}
+
+        # get the response
+        response = requests.request("GET", url, headers=headers, params=query_string)
+        response_JSON = response.json()
+
+        #get the bits of the response we want
+        active = response_JSON['response'][0]['cases']['active']
+        new = response_JSON['response'][0]['cases']['new']
+        new_deaths = response_JSON['response'][0]['deaths']['new']
+        total_deaths = response_JSON['response'][0]['deaths']['total']
+
+        dispatcher.utter_message(template="utter_get_infection_stats_sw",
+                                 active = active,
+                                 new = new,
+                                 country = country,
+                                 new_deaths = new_deaths,
+                                 total_deaths = total_deaths
+                                 )
 #        dispatcher.utter_message(text=f'There are {active} people infected in {country}, a change of {new} on yesterday.')
 
         return []
