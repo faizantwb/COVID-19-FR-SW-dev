@@ -152,6 +152,82 @@ intents:
 - whats_your_name_sw
 - where_do_you_live_sw
 - covid_myth_hot_tea_sw
+- affirm_en
+- answer_is_wrong_en
+- ask_for_local_stats_en
+- ask_for_stats_en
+- ask_language_questions_en
+- covid_anxiety_en
+- covid_call_a_doctor_en
+- covid_children_stress_en
+- covid_disinfect_en
+- covid_donts_en
+- covid_explain_pandemic_en
+- covid_gloves_en
+- covid_hospital_en
+- covid_how_spread_en
+- covid_incubation_en
+- covid_infection_likelihood_en
+- covid_infection_sources_en
+- covid_isolate_en
+- covid_masks_availability_en
+- covid_masks_care_en
+- covid_masks_effectiveness_en
+- covid_masks_how_to_en
+- covid_myth_alcohol_chlorine_en
+- covid_myth_antibiotics_en
+- covid_myth_cold_kills_en
+- covid_myth_drink_en
+- covid_myth_drink_alcohol_en
+- covid_myth_flies_en
+- covid_myth_fruits_en
+- covid_myth_garlic_en
+- covid_myth_hand_dryers_en
+- covid_myth_heat_kills_en
+- covid_myth_hold_breath_en
+- covid_myth_hot_bath_en
+- covid_myth_mosquitos_en
+- covid_myth_only_old_en
+- covid_myth_other_vaccines_en
+- covid_myth_phone_signals_en
+- covid_myth_saline_rinse_en
+- covid_myth_spices_en
+- covid_myth_steam_en
+- covid_myth_thermal_scanners_en
+- covid_myth_traditional_medicine_en
+- covid_myth_UV_en
+- covid_myths_summary_en
+- covid_on_surfaces_en
+- covid_protection_en
+- covid_protection_wash_hands_en
+- covid_protection_keep_distance_en
+- covid_protection_cover_mouth_nose_en
+- covid_protection_stay_at_home_en
+- covid_risk_for_children_en
+- covid_risk_for_old_people_en
+- covid_risk_with_preexisting_en
+- covid_risk_most_at_risk_en
+- covid_SARS_en
+- covid_stay_at_home_en
+- covid_stress_en
+- covid_symptoms_en
+- covid_travel_advice_en
+- covid_treatments_en
+- covid_wash_hands_frequency_en
+- covid_wash_hands_how_en
+- covid_what_is_corona_covid-19_en
+- covid_why_distancing_en
+- deny_en
+- goodbye_en
+- greet_en
+- out_of_scope_en
+- request_for_french_en
+- share_with_your_friends_en
+- user_says_thanks_en
+- want_to_give_feedback_en
+- whats_your_name_en
+- where_do_you_live_en
+- covid_myth_hot_tea_en
 
 forms:
   - form_first_time_fr
@@ -164,6 +240,11 @@ forms:
   - form_feedback_sw
   - form_language_questions_sw
   - form_myth_source_sw
+  - form_first_time_en
+  - form_contact_details_en
+  - form_feedback_en
+  - form_language_questions_en
+  - form_myth_source_en
 
 actions:
   - action_get_infection_stats_fr
@@ -178,6 +259,12 @@ actions:
   - action_get_language_questions_sw
   - action_link_to_pandemic_video_sw
   - action_ask_anything_else_sw
+  - action_get_infection_stats_en
+  - action_get_contact_details_en
+  - action_get_feedback_en
+  - action_get_language_questions_en
+  - action_link_to_pandemic_video_en
+  - action_ask_anything_else_en
 
 slots:
   first_time_fr:
@@ -247,6 +334,40 @@ slots:
   issue_detail_sw:
     type: unfeaturized
   name_sw:
+    type: unfeaturized
+  first_time_en:
+    type: unfeaturized
+  given_name_en:
+    type: unfeaturized
+  location_en:
+    type: unfeaturized
+  myth_source_en:
+    type: unfeaturized
+  willing_to_do_language_survey_en:
+    type: unfeaturized
+  language_at_home_en:
+    type: unfeaturized
+  language_for_written_comms_en:
+    type: unfeaturized
+  language_for_verbal_comms_en:
+    type: unfeaturized
+  preferred_channel_en:
+    type: unfeaturized
+  feedback_en:
+    type: unfeaturized
+  feedback_reason_en:
+    type: unfeaturized
+  requested_slot_en:
+    type: unfeaturized
+  country_en:
+    type: text
+  container_en:
+    type: text
+  issue_type_en:
+    type: unfeaturized
+  issue_detail_en:
+    type: unfeaturized
+  name_en:
     type: unfeaturized
 
 responses:
@@ -908,6 +1029,335 @@ responses:
 
     utter_answer_covid_why_distancing_sw:
       - text: "Kuwa mbali ku metre moja ao zaidi na mtu yeyote mwenye anagohola ao mwenye anapiga chafya. Wakati mtu anagohola ao kupiga chafya, anapitisha bu matoni budogo budogo kupitia pua ao kinywa na bule bu matoni bunaweza kuwa amo virusi. Epuka kujigusa macho, pua na kinywa. Mikono zinagusaka ma fasi za mingi na zinaweza leta virusi mu mwili yako wakati unajigusa macho, pua ao kinywa. "
+
+    utter_anything_else_en:
+      - text: "Anything else I can try to answer for you?"
+
+    utter_ask_anything_else_en:
+      - text: "Anything else I can try to answer for you?"
+
+    utter_ask_feedback_reason_en:
+      - text: "Could you tell us what you think we could better?"
+
+    utter_ask_first_time_en:
+      - text: "Is this the first time we have chatted?"
+
+    utter_ask_given_name_en:
+      - text: "What would you like me to call you?"
+      - text: "What do your friends call you?"
+
+    utter_ask_language_at_home_en:
+      - text: "What language you mainly speak at home?"
+
+    utter_ask_language_for_verbal_comms_en:
+      - text: "And is that the same language you like to *listen* to information in?\n\n If not, which language do you prefer?"
+
+    utter_ask_language_for_written_comms_en:
+      - text: "Which language do you prefer to *read* information in?"
+
+    utter_ask_willing_to_do_language_survey_en:
+      - text: "Would you be willing to tell me a bit about the languages you speak?"
+
+    utter_collect_fallback_en:
+      - text: "It seems that I am having some difficulties. Sorry. Let's start again. What can I help you with today?"
+      - text: "I'm sorry. I didn't quite get that. Please say that again."
+
+    utter_explain_pandemic_en:
+      - text: "An epidemic is local or regional, a pandemic is in multiple countries and regions across the world."
+
+    utter_explain_pandemic2_en:
+      - text: "Here's something to explain the differences"
+
+    utter_explain_pandemic3_en:
+      - text: "Here's something to explain the differences"
+
+    utter_get_back_on_topic_en:
+      - text: "Any questions about COVID-19 or general questions about health I can help you with?"
+
+    utter_get_infection_stats_en:
+      - text: "There are currently {active} people infected in {country}, a change of {new} on yesterday, {new} new deaths ({total_deaths} total)."
+
+    utter_get_informed_consent_en:
+      - text: "Hi. Thanks for getting in touch. My name is <~~bot_name~~ Uji> Don’t worry, no one can identify you from your questions or comments however we want you to know that we will collect and analyze what you type. If we do, we we’ll use it to make this service better. We promise that we’ll **NEVER** use your personal information, including your phone number, unless you tell us that we can. By carrying on this conversation, we will assume that you agree. Thank you"
+
+    utter_goodbye_en:
+      - text: "Bye! Nice talking with you!"
+
+    utter_greet_with_name_en:
+      - text: "Hi {given_name}!"
+
+    utter_introduce_survey_en:
+      - text: "I speak French and Swahili, but I'm learning to speak more. \n\nI'd like to ask you a few questions about the languages you know..."
+
+    utter_no_local_stats_en:
+      - text: "I'm sorry, we don't have local information, but here are the national statistics from today. "
+
+    utter_out_of_scope_en:
+      - text: "Sorry, I don't know how to respond to that yet."
+
+    utter_reply_goodbye_en:
+      - text: "Goodbye. Please reach out again if you have any questions."
+
+    utter_reply_greeting_en:
+      - text: "Hello! I can answer questions about COVID-19. How can I help with today?"
+
+    utter_reply_thanks_en:
+      - text: "Thank you too!"
+
+    utter_reply_where_do_you_live_en:
+      - text: "I am a computer, I live among telephones."
+      - text: "I am a computer, I live among clouds."
+
+    utter_set_expectations_en:
+      - text: "I can answer questions about COVID-19, what would you like to know?\n\nFor instance, I can tell you how many people have the disease, or how to keep yourself safe.\n\nI haven't been doing this long, so please be patient with me!"
+
+    utter_thanks_for_your_feedback_en:
+      - text: "Thanks, that's interesting!"
+      - text: "I appreciate your feedback"
+
+    utter_welcome_back_en:
+      - text: "Welcome back!"
+      - text: "Thanks for coming back"
+
+    utter_reply_whats_your_name_en:
+      - text: "My name is Uji"
+
+    utter_reply_to_request_for_french_en:
+      - text: "I'm sorry, I seem to have misunderstood the question completely. Could you try again?"
+
+    utter_reply_to_wrong_answer_en:
+      - text: "I'm sorry, we'll make a note of it and change it as soon as we can."
+
+    utter_share_with_your_friends_en:
+      - text: "To share with your friends, send them this link: https://t.me/twb_uji_drc_bot"
+
+    utter_ask_location_en:
+      - text: "Where are you?"
+        buttons:
+        - title: "N. Kivu"
+          payload: "kivu_nord"
+        - title: "S. Kivu"
+          payload: "kivu_sud"
+        - title: "Ituri"
+          payload: "ituri"
+        - title: "Other"
+          payload: "other"
+
+    utter_ask_myth_source_en:
+      - text: "If you don't mind me asking - where did you hear that?"
+        buttons:
+        - title: "Friends & Family"
+          payload: "f_and_f"
+        - title: "Radio"
+          payload: "radio"
+        - title: "WhatsApp"
+          payload: "whatsapp"
+        - title: "Twitter"
+          payload: "twitter"
+
+    utter_ask_preferred_channel_en:
+      - text: "How do you prefer to receive information?"
+        buttons:
+        - title: "In Person"
+          payload: "in_person"
+        - title: "radio"
+          payload: "radio"
+        - title: "leaflet"
+          payload: "leaflet"
+        - title: "WhatsApp"
+          payload: "WhatsApp"
+        - title: "SMS"
+          payload: "SMS"
+        - title: "Other"
+          payload: "Other"
+
+    utter_ask_feedback_en:
+      - text: "Did we do ok?"
+        buttons:
+        - title: "Yes"
+          payload: "/affirm"
+        - title: "No"
+          payload: "/deny"
+
+    utter_answer_covid_anxiety_en:
+      - text: "Symptoms of COVID-19 are generally mild for most people, especially young people and healthy people. However in some cases, it can cause serious illness: about 1 in every 5 people who catch it need hospital care. It is therefore quite normal for people to worry about how the coronavirus could affect them and their loved ones. The most powerful thing we can do is to take actions to protect ourselves, our loved ones and our communities. Firstly thorough hand-washing and following hygiene measures. Secondly, keep informed and follow the advice of the local health authorities including any restrictions put in place on travel, movement and gatherings. Learn more about how to protect yourself at: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+
+    utter_answer_covid_call_a_doctor_en:
+      - text: "If you cough, have a fever, and have difficulty breathing, see a doctor quickly - but call your health center first by phone."
+
+    utter_answer_covid_children_stress_en:
+      - text: "In difficult times children may respond in different ways. They may be scared or angry. They might show changes in their behaviour like wetting the bed, wanting to be closer to you or becoming quiet and withdrawn.   Respond to your child’s reactions in a supportive way, listen to their concerns and give them extra love and attention. Children need adults’ love and attention during difficult times. Listen to your children and speak kindly. As much as possible, make opportunities for the child to play and relax. Keep to regular routines and schedules as much as possible.   Try and keep children close to their parents and family. If separation occurs (for exmple someone has to go hospital) ensure regular contact (via phone) and make sure they feel safe and supported.   Give them facts about what has happened; explain what is going on now and give them clear information about how to reduce their risk of being infected by the disease in words that they can understand depending on their age. This also includes providing information about what could happen in a re-assuring way (e.g. a family member and/or the child may start not feeling well and may have to go to the hospital for some time so doctors can help them feel better)."
+
+    utter_answer_covid_disinfect_en:
+      - text: "To protect yourself from coronavirus (COVID-19), you must disinfect objects and surfaces, especially those that you touch regularly. Never drink disinfectants such as methanol, ethanol and bleach. They do not destroy the virus in the body and cause damage to internal organs. "
+
+    utter_answer_covid_donts_en:
+      - text: "The following measures are NOT effective against COVID-19 and may be harmful: -Smoking -Taking antibiotics -Drinking methanol, ethanol or other disinfectants  Beware of rumors. Get your information from expert sources such as the Department of Health or the World Health Organisation (WHO). https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
+
+    utter_answer_covid_explain_pandemic_en:
+      - text: "epidemic vs pandemic"
+
+    utter_answer_covid_gloves_en:
+      - text: "Washing your hands regularly protects against COVID-19 better than wearing rubber gloves. The virus can be on the gloves and there is a risk of contamination if you touch your face with the gloves. Washing your hands is more effective than wearing gloves."
+
+    utter_answer_covid_hospital_en:
+      - text: "Most patients of COVID-19 recover (around 80%) without needing to be hospitalised. If you have a cough, fever and difficulty breathing, see a doctor quickly - but first contact your health center by phone."
+
+    utter_answer_covid_how_spread_en:
+      - text: "People can catch COVID-19 from others who have the virus. The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales. These droplets land on objects and surfaces around the person. Other people then catch COVID-19 by touching these objects or surfaces, then touching their eyes, nose or mouth. People can also catch COVID-19 if they breathe in droplets from a person with COVID-19 who coughs out or exhales droplets. This is why it is important to stay more than 1 meter (3 feet) away from a person who is sick and to wash your hands regularly. WHO is assessing ongoing research on the ways COVID-19 is spread and will continue to share updated findings."
+
+    utter_answer_covid_incubation_en:
+      - text: "The “incubation period” means the time between catching the virus and beginning to have symptoms of the disease. Most estimates of the incubation period for COVID-19 range from 1-14 days, most commonly around five days. These estimates will be updated as more data become available."
+
+    utter_answer_covid_infection_likelihood_en:
+      - text: "The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak in the area. For people living in, or visiting, these areas the risk of catching COVID-19 is higher. Be sure to comply with any local restrictions on travel, movement or large gatherings. It’s important to be aware of the situation where you are or intend to go. "
+
+    utter_answer_covid_infection_sources_en:
+      - text: "The original sources of COVID-19 have not yet been confirmed. COVID-19 is spread between humans mainly by the droplets produced when an infected person coughs, sneezes or talks. WHO is evaluating the ongoing research into how COVID-19 is spread and thanks for sharing its new findings."
+
+    utter_answer_covid_isolate_en:
+      - text: "The majority of patients show symptoms 14 days after coming into contact with the virus. For this reason, people with symptoms or people who have had contact with someone with symptoms should be isolated (this means being away from physical contact with someone else) for 14 days."
+
+    utter_answer_covid_masks_availability_en:
+      - text: "Ask at your health centre, where you can get a mask. Wear a mask if you cough or sneeze. If you wear a mask, it is important that you know how to use and dispose of it properly. "
+
+    utter_answer_covid_masks_care_en:
+      - text: "Generally you should only wear a mask once. Wear a mask if you cough or sneeze. If you wear a mask, it is important that you know how to use and dispose of it properly. -When wearing a mask, avoid touching it; each time you touch a used mask, wash your hands with a hydroalcoholic solution or soap and water -When it gets wet, replace it with a new mask and do not reuse single-use masks -To remove the mask: remove it from behind (do not touch the front of the mask); immediately dispose of it in a closed bin; wash hands with hydroalcoholic solution or soap and water"
+
+    utter_answer_covid_masks_effectiveness_en:
+      - text: "Masks provide some protection and help prevent the virus from spreading. Wear a mask if you cough or sneeze. If you wear a mask, it is important that you know how to use and dispose of it properly. "
+
+    utter_answer_covid_masks_how_to_en:
+      - text: "Wear a mask if you cough or sneeze. If you wear a mask, it is important that you know how to use and dispose of it properly. -Before putting on a mask, wash your hands with a hydroalcoholic solution or with soap and water -Apply the mask to cover the nose and mouth and make sure to adjust it as well as possible on your face -When wearing a mask, avoid touching it; each time you touch a used mask, wash your hands with a hydroalcoholic solution or soap and water -When it gets wet, replace it with a new mask and do not reuse single-use masks -To remove the mask: remove it from behind (do not touch the front of the mask); immediately dispose of it in a closed bin; wash hands with hydroalcoholic solution or soap and water  https://www.youtube.com/watch?v=KuT1KNfJIjc"
+
+    utter_answer_covid_risk_most_at_risk_en:
+      - text: "Anyone can be at risk of serious illness from COVID-19. Older people and those with other health conditions (high blood pressure, heart or lung problems, diabetes or cancer) are more likely to have serious symptoms. However, anyone can get COVID-19 and become seriously ill. People of any age who have a fever and / or cough associated with difficulty breathing / shortness of breath, chest pain / pressure, or loss of speech or difficulty moving consult a doctor immediately."
+
+    utter_answer_covid_risk_for_children_en:
+      - text: "Children are also at risk from the virus. Older people and those with other health conditions (high blood pressure, heart or lung problems, diabetes or cancer) are more likely to have serious symptoms. However, anyone can get COVID-19 and become seriously ill. People of any age who have a fever and / or cough associated with difficulty breathing / shortness of breath, chest pain / pressure, or loss of speech or difficulty moving consult a doctor immediately."
+
+    utter_answer_covid_risk_for_old_people_en:
+      - text: "Older people and those with other health conditions (high blood pressure, heart or lung problems, diabetes or cancer) are more likely to have serious symptoms. However, anyone can get COVID-19 and become seriously ill. People of any age who have a fever and / or cough associated with difficulty breathing / shortness of breath, chest pain / pressure, or loss of speech or difficulty moving consult a doctor immediately."
+
+    utter_answer_covid_risk_with_preexisting_en:
+      - text: "Those with other health conditions (high blood pressure, heart or lung problems, diabetes or cancer) are more likely to have serious symptoms. Older people also have a risk of serious symptoms. However, anyone can get COVID-19 and become seriously ill. People of any age who have a fever and / or cough associated with difficulty breathing / shortness of breath, chest pain / pressure, or loss of speech or difficulty moving consult a doctor immediately."
+
+    utter_answer_covid_myth_alcohol_chlorine_en:
+      - text: "Spraying alcohol or chlorine or other disinfectants on your body or introducing them into the body does not protect against COVID-19 and can be dangerous."
+
+    utter_answer_covid_myth_antibiotics_en:
+      - text: "Antibiotics DO NOT work against viruses, antibiotics only work against bacteria."
+
+    utter_answer_covid_myth_cold_kills_en:
+      - text: "Cold weather and snow CANNOT kill COVID-19."
+
+    utter_answer_covid_myth_drink_en:
+      - text: "Drinking methanol, ethanol or other disinfectants will NOT prevent or cure COVID-19 and can be extremely dangerous"
+
+    utter_answer_covid_myth_drink_alcohol_en:
+      - text: "Drinking alcohol does not protect from COVID-19 and can be dangerous."
+
+    utter_answer_covid_myth_flies_en:
+      - text: "There is no data or information to suggest that house flies transmit COVID-19. The virus that causes COVID-19 is spread mainly by the droplets that an infected person expels when they cough, sneeze, or talk. "
+
+    utter_answer_covid_myth_fruits_en:
+      - text: "Eating fruits is healthy, but does not prevent or cure corona virus (COVID-19)."
+
+    utter_answer_covid_myth_garlic_en:
+      - text: "Garlic is healthy but there is NO evidence from the current outbreak that eating garlic has protected people from the coronavirus."
+
+    utter_answer_covid_myth_hand_dryers_en:
+      - text: "Hand dryers are NOT effective in killing COVID-19."
+
+    utter_answer_covid_myth_heat_kills_en:
+      - text: "COVID-19 MAY be transmitted in areas with a hot and humid climate. Exposure to the sun or hightemperatures DOES NOT PREVENT against contracting coronavirus disease."
+
+    utter_answer_covid_myth_hold_breath_en:
+      - text: "Being able to hold your breath for 10 seconds or more without coughing DOES NOT mean that you are spared from coronavirus disease 2019 (COVID-19) or any other lung disease."
+
+    utter_answer_covid_myth_hot_bath_en:
+      - text: "Taking a hot bath DOES NOT protect against COVID-19."
+
+    utter_answer_covid_myth_mosquitos_en:
+      - text: "COVID-19 CANNOT be transmitted through mosquito bites."
+
+    utter_answer_covid_myth_only_old_en:
+      - text: "People of all ages CAN be infected by COVID-19. Older people, and people with pre-existing medical conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming severely ill with the virus."
+
+    utter_answer_covid_myth_other_vaccines_en:
+      - text: "Vaccines against pneumonia DO NOT provide protection against the coronavirus."
+
+    utter_answer_covid_myth_phone_signals_en:
+      - text: "Viruses do not travel on radio waves or over mobile networks."
+
+    utter_answer_covid_myth_saline_rinse_en:
+      - text: "There is NO evidence that regularly rinsing the nose with saline has protected people from infection with the coronavirus. Washing your nose to treat COVID-19 is not advised."
+
+    utter_answer_covid_myth_spices_en:
+      - text: "Adding chili to your soup or other dish does NOT prevent or cure COVID-19."
+
+    utter_answer_covid_myth_steam_en:
+      - text: "Inhaling hot steam DOES NOT cure or prevent COVID-19. Inhaling very hot steam is dangerous."
+
+    utter_answer_covid_myth_thermal_scanners_en:
+      - text: "Thermal scanners CAN detect if people have a fever but CANNOT detect whether or not someone has COVID-19."
+
+    utter_answer_covid_myth_traditional_medicine_en:
+      - text: "There is no known natural treatment that treats or stops coronavirus. The best protection is to observe barrier gestures and report early if symptoms appear."
+
+    utter_answer_covid_myth_UV_en:
+      - text: "Ultraviolet light SHOULD NOT be used for sterilization and can cause skin irritation."
+
+    utter_answer_covid_myths_summary_en:
+      - text: "There is a lot of false information about COVID-19. Here are some facts: - The majority of people who get the coronavirus can get better and eliminate the virus from their body. - Some people may develop more severe forms of the disease, such as pneumonia. Some other people, although infected, have only mild symptoms. - People of all ages MAY be infected with the coronavirus. Seniors and people with pre-existing health conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming seriously ill with the virus. -To date, there is NO specific medication recommended to prevent or treat coronavirus. The majority of patients recover with supportive therapy. -Drinking methanol, ethanol or other disinfectants will NOT prevent or cure the coronavirus and can be extremely dangerous.  Check the facts on the WHO website: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
+
+    utter_answer_covid_on_surfaces_en:
+      - text: "It is not known exactly how long the virus responsible for COVID-19 survives on surfaces, but it seems to look like other coronaviruses. Studies suggest that coronaviruses (including preliminary information about the COVID-19 virus) may persist on surfaces for a few hours or up to several days. This may vary under different conditions (for example, the type of surface, the temperature or the application of the environment). If you think a surface may be infected, clean it with a simple disinfectant to kill the virus, to protect yourself and others. Wash your hands with a hydroalcoholic gel or wash them with soap and water. Avoid touching your eyes, mouth or nose."
+
+    utter_answer_covid_protection_en:
+      - text: "Follow these simple precautions to protect you and your family from COVID-19:  -Wash your hands regularly (for at least 20 seconds) with an alcohol-based hand gel or wash them with soap and water. This kills viruses that may be present on your hands. -Maintain a distance of at least 1 meter from anyone who coughs or sneezes. When a person coughs or sneezes, they pass small droplets through the nose or mouth that may contain the virus. Avoid touching your eyes, nose and mouth. Hands touch many surfaces and can transmit viruses to your body when you touch your eyes, nose or mouth. -Cover your mouth and nose with your bent elbow or a tissue when you cough or sneeze. Then immediately throw away the used tissue. Droplets from sneezing or coughing can spread the virus. -Stay home if you don't feel well. If you have a fever, cough, and difficulty breathing, see a doctor and call ahead. Follow the instructions of your local health authority."
+
+    utter_answer_covid_protection_wash_hands_en:
+      - text: "Follow these simple precautions to protect you and your family from COVID-19:  -Wash your hands regularly (for at least 20 seconds) with an alcohol-based hand gel or wash them with soap and water. This kills viruses that may be present on your hands.    "
+
+    utter_answer_covid_protection_keep_distance_en:
+      - text: "-Maintain a distance of at least 1 meter from anyone who coughs or sneezes. When a person coughs or sneezes, they pass small droplets through the nose or mouth that may contain the virus. Avoid touching your eyes, nose and mouth. Hands touch many surfaces and can transmit viruses to your body when you touch your eyes, nose or mouth."
+
+    utter_answer_covid_protection_cover_mouth_nose_en:
+      - text: "-Cover your mouth and nose with your bent elbow or a tissue when you cough or sneeze. Then immediately throw away the used tissue. Droplets from sneezing or coughing can spread the virus."
+
+    utter_answer_covid_protection_stay_at_home_en:
+      - text: "-Stay home if you don't feel well. If you have a fever, cough, and difficulty breathing, see a doctor and call ahead. Follow the instructions of your local health authority."
+
+    utter_answer_covid_SARS_en:
+      - text: "Severe acute respiratory syndrome (SARS) comes from the same family of viruses as the current coronavirus (COVID-19) and both can cause respiratory (breathing) issues. However, they are different diseases. There have been no outbreaks of SARS anywhere in the world since 2003."
+
+    utter_answer_covid_stay_at_home_en:
+      - text: "Staying at home reduces the risk of contracting or spreading COVID-19. If your local government advises you to stay in isolation, protect yourself and stay at home. Even if you are in good health, leave the house only for the basic needs of your family, respecting the measures recommended by the health authorities. If you have symptoms or have been in contact with someone who has symptoms, stay home for at least 14 days. You can call a doctor or clinic for medical advice."
+
+    utter_answer_covid_stress_en:
+      - text: "It is normal to feel sad, stressed, confused, scared or angry during a crisis. Talking to people you trust can help. Contact your friends and family. If you must stay at home, maintain a healthy lifestyle - including proper diet, sleep, exercise and social contacts with loved ones at home and by email and phone with other family and friends. Don’t use smoking, alcohol or other drugs to deal with your emotions. If you feel overwhelmed, talk to a health worker or counsellor. Have a plan, where to go to and how to seek help for physical and mental health needs if required. ℹ Get the facts. Gather information that will help you accurately determine your risk so that you can take reasonable precautions. Find a credible source you can trust such as WHO website or, a local or state public health agency. Limit worry and agitation by lessening the time you and your family spend watching or listening to media coverage that you perceive as upsetting. Draw on skills you have used in the past that have helped you to manage previous life’s adversities and use those skills to help you manage your emotions during the challenging time of this outbreak."
+
+    utter_answer_covid_symptoms_en:
+      - text: "The most common symptoms of COVID-19 are fever, dry cough, and fatigue. Other less common symptoms may also appear in some people, such as body aches and pains, nasal congestion, headache, conjunctivitis, sore throat, diarrhea, loss of taste or smell, a rash or discoloration of the fingers of the hand or foot. Some people may develop more severe forms of the disease, such as pneumonia. Some other people, although infected, have very mild symptoms. If you have a cough, fever and difficulty breathing, see a doctor quickly - but first contact your health center by phone."
+
+    utter_answer_covid_travel_advice_en:
+      - text: "It is a good idea for travelers to delay or avoid trips to affected areas, especially for older travelers and those with chronic illnesses or underlying health conditions.  General recommendations for all travelers include: -Wash your hands regularly -Avoid touching your eyes, mouth and nose -Cover your mouth and nose with your elbow bent or with a tissue when you cough or sneeze -Stay more than a meter away from a sick person  Travelers returning from affected areas should: - Monitor symptoms for 14 days and follow the national protocols of the country. -In case of symptoms such as fever, cough or difficulty in breathing, travelers are advised to contact local health care providers, preferably by phone, and to indicate their symptoms and history of trip . "
+
+    utter_answer_covid_treatments_en:
+      - text: "To date, there is no vaccine and no specific medicine to prevent or treat COVID-2019. Possible vaccines and some specific drug treatments are being tested. You should not give yourself medication such as antibiotics. However, those affected should receive care to relieve symptoms. People with serious illness should be hospitalized. Most patients recover thanks to supportive care. Coronavirus disease 2019 (COVID-19) can be cured. Catching this virus does NOT mean that you will have it for the rest of your life. If you have a cough, fever and difficulty breathing, see a doctor quickly - but first contact your health center by phone.  "
+
+    utter_answer_covid_wash_hands_frequency_en:
+      - text: "Nawa mikono mara kwa mara ukitumia alcol ao maji na sabuni."
+
+    utter_answer_covid_wash_hands_how_en:
+      - text: "Nawa mikono yako na maji ya kutakata na sabuni, ukifanya 20 seconde ao zaidi. Kama hauna sabuni na maji, tumikisha dawa ya kimaji ya kuuwa uchafu (alcol)"
+
+    utter_answer_covid_what_is_corona_covid-19_en:
+      - text: "Coronaviruses are a large family of viruses which may cause illness in animals or humans. In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases. The most recently discovered coronavirus causes coronavirus disease COVID-19. COVID-19 is the infectious disease caused by the most recently discovered coronavirus."
+
+    utter_answer_covid_why_distancing_en:
+      - text: "Maintain a distance of at least 1 meter from anyone who coughs or sneezes. When a person coughs or sneezes, they pass small droplets through the nose or mouth that may contain the virus. Avoid touching your eyes, nose and mouth. Hands touch many surfaces and can transmit viruses to your body when you touch your eyes, nose or mouth.  "
 
 session_config:
   session_expiration_time: 60
