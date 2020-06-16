@@ -70,9 +70,12 @@ intents:
 - greet_fr
 - out_of_scope_fr
 - request_for_french_fr
+- share_with_your_friends_fr
 - user_says_thanks_fr
+- want_to_give_feedback_fr
 - whats_your_name_fr
 - where_do_you_live_fr
+- covid_myth_hot_tea_fr
 - affirm_sw
 - answer_is_wrong_sw
 - ask_for_local_stats_sw
@@ -143,9 +146,12 @@ intents:
 - greet_sw
 - out_of_scope_sw
 - request_for_french_sw
+- share_with_your_friends_sw
 - user_says_thanks_sw
+- want_to_give_feedback_sw
 - whats_your_name_sw
 - where_do_you_live_sw
+- covid_myth_hot_tea_sw
 
 forms:
   - form_first_time_fr
@@ -165,11 +171,13 @@ actions:
   - action_get_feedback_fr
   - action_get_language_questions_fr
   - action_link_to_pandemic_video_fr
+  - action_ask_anything_else_fr
   - action_get_infection_stats_sw
   - action_get_contact_details_sw
   - action_get_feedback_sw
   - action_get_language_questions_sw
   - action_link_to_pandemic_video_sw
+  - action_ask_anything_else_sw
 
 slots:
   first_time_fr:
@@ -340,6 +348,9 @@ responses:
 
     utter_reply_to_wrong_answer_fr:
       - text: "Je suis désolé, nous en prendrons note et le changerons dès que possible."
+
+    utter_share_with_your_friends_fr:
+      - text: "Pour partager avec vos amis, envoyez-leur ce lien: https://t.me/twb_uji_drc_bot"
 
     utter_ask_location_fr:
       - text: "Où es-tu?"
@@ -579,7 +590,7 @@ responses:
       - text: "Unaweza kutuambia unazani tunaweza kufanya nini kwa kufanya ikuwe mzuri zaidi"
 
     utter_ask_first_time_sw:
-      - text: "Je! Hii ni mara ya kwanza kuongea"
+      - text: "Je! Hii ni mara ya kwanza kuongea?"
 
     utter_ask_given_name_sw:
       - text: "Je! Marafiki wako wanakuita nani"
@@ -614,7 +625,7 @@ responses:
       - text: "Minaweza jibu maulizo yoyote kuhusu COVID-19 ao maswali ya kawaida kuhusu afya"
 
     utter_get_infection_stats_sw:
-      - text: "Hivi sasa kuna watu {active} walioambukizwa katika {inchi}, mabadiliko kutoka kwa {mpya} jana, {vifo_mpya} vitu mbaya za mpya ({vifo_viote} jumla)"
+      - text: "Hivi sasa kuna watu {active} walioambukizwa katika {country}, mabadiliko kutoka kwa {new} jana, {new_deaths} vitu mbaya za mpya ({total_deaths} jumla)"
 
     utter_get_informed_consent_sw:
       - text: "Halo. Asante kwa kuwasiliana na mimi. Jina langu ni <Uji - Ukingo Jibu> Usiwe na wasiwasi, hakuna mtu anayeweza kukutambuwa kutoka kwa maulizo ao maoni yako lakini tunataka ujuwe kama tutakusanya na kuchunguza unachokiandika. Ikiwa tutafanya hivyo, tutaitumikisha kufanya huduma hii ikuwe mzuri zaidi. Tunaahidi kwamba hatuta tumikisha habari yako ya kibinafsi, pamoja na numero yako ya simu, akose kama tu unaturuhusu. Kwa kuendelea na mazungumzo haya, tutajuwa kama unakubali. Asante"
@@ -666,6 +677,9 @@ responses:
 
     utter_reply_to_wrong_answer_sw:
       - text: "Samahani, tutaandika na kuibadilisha haraka iwezekanavyo."
+
+    utter_share_with_your_friends_sw:
+      - text: "Ili kushiriki na marafiki wako, watumie kiunga hiki: https://t.me/twb_uji_drc_bot"
 
     utter_ask_location_sw:
       - text: "Uko wapi?"
@@ -719,7 +733,7 @@ responses:
       - text: "Ma halama za ugonjwa ya virusi ya corona (COVID-19) zinakuwaka za kidogo kwa watu wengi, hasa tena kwa vijana na kwa watu wenyi hali nzuri ya afya. Alakini, katika kesi zimoja, inaweza kusababisha ugonjwa ya nguvu: Umoya ku ba tano benyi banaipataka anahitaji matunzo ya hospitali. Kwa hivyo ni kawaida kabisa kwa batu ku ogopa gisi virusi ya corona inaweza kubagonjwesha na bandugu yabo. Kitu ya nguvu yenyi tunaweza kufanya ni kuchukuwa hatua za kujikinga, kukinga bandugu betu na jamii zetu. Kwanza kabisa kati ya hatua hizi ni mara kwa mara kunawa mikono vizuri na kuheshimu hatua za usafi. Ya pili, kufwata habari na ushauri wa mamlaka za baongozi ba afya nyumbani na pamoja na kizuizi yoyote ya usafiri, kutembeya na mikutano. Jifunze zaidi kuhusu gisi ya kujilinda kwa https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
 
     utter_answer_covid_call_a_doctor_sw:
-      - text: "If you cough, have a fever, and have difficulty breathing, see a doctor quickly - but call your health center first by phone."
+      - text: "Ikiwa unakohoa, una homa, na ugumu kupumua, tazama daktari haraka - lakini piga simu kituo chako cha afya kwanza kwa simu."
 
     utter_answer_covid_children_stress_sw:
       - text: "Mu wakati za magumu, batoto banaweza kujibu mu njia tafauti. Banaweza kuwa na boga ao bisirani. banaweza kuonesha mabadiliko katika tabia zabo, kama vile kukoyola ku kitanda, kutaka kukuwa karibu na wewe ao kusipo sema na kubaki mu fasi yake mwenyewe.   Angaikiya mutoto wako na umuunge mkono, sikiliza tatizo zake na umuoneshe upendo na umuoneshe kama unamuangaikia sana. batoto banakuwaka na hitaji upendo ya bakubwa katika wakati za magumu. Sikiliza batoto na uongeye nabo na unyenyekevu. Ikiwezekana, fanya gisi yote mutoto apate wakati ya kucheza na kufurahi. Heshimia gisi yabo yakukuwa ya kawaida.   Weka batoto karibu na bazazi yabo na familia zabo. Kama kunakuwa separation (kwa mfano, mtu anapashwa enda mu hospitali), hakikisha bakuwe naongeleshana mara kwa mara (ku simu) na hakikisha kama banajisikia biko katika hali ya usalama na banaungwa mkono.  Baambiye ukweli kuhusu bienyi bilipitikana; uwafasiriye  bienyi biko napitikana kwa sasa na uwape habari wazi kuhusu gisi ya kupunguza hatari kwao ya kuambukizwa na ugonjwa kupitia maneno zenyi banaweza sikia kufuatana na miaka zabo. Na pia kuwapa habari kuhusu kinachoweza kutokea mu kuwaunga mkono (kwa mfano, mtu wa familia na / ao mutoto anaweza kuanza kujisikia mugonjwa na anahitaji kuenda hospitalini kwa muda fulani ili madaktari (banganga) bamusaidie apone)."
