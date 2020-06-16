@@ -771,6 +771,7 @@
 
 ## intent:greet_fr
 - quoi de neuf
+- lo ge
 - quoi de neuf
 - Que fais-tu
 - Que pouvez-vous faire
@@ -1646,6 +1647,7 @@
 
 ## intent:greet_sw
 - vipi
+- hor kuch
 - vipi
 - unafanyaka nini
 - unaweza fanya nini
@@ -2522,6 +2524,7 @@
 
 ## intent:greet_en
 - sup
+- han bhai una
 - whatsup
 - what do you do
 - what can you do
