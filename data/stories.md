@@ -54,7 +54,6 @@
 
 ## answer_wrong answer_fr
  - utter_reply_to_wrong_answer_fr
- - utter_anything_else_fr
 
 ## answer__fr
 
@@ -114,7 +113,6 @@
 
 ## answer_wrong answer_sw
  - utter_reply_to_wrong_answer_sw
- - utter_anything_else_sw
 
 ## answer__sw
 
