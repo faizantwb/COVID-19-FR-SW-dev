@@ -70,7 +70,9 @@ intents:
 - greet_fr
 - out_of_scope_fr
 - request_for_french_fr
+- share_with_your_friends_fr
 - user_says_thanks_fr
+- want_to_give_feedback_fr
 - whats_your_name_fr
 - where_do_you_live_fr
 - affirm_sw
@@ -143,7 +145,9 @@ intents:
 - greet_sw
 - out_of_scope_sw
 - request_for_french_sw
+- share_with_your_friends_sw
 - user_says_thanks_sw
+- want_to_give_feedback_sw
 - whats_your_name_sw
 - where_do_you_live_sw
 
@@ -243,9 +247,6 @@ slots:
 
 responses:
 
-    utter_anything_else_fr:
-      - text: "Autre chose que je peux essayer de répondre pour vous?"
-
     utter_ask_anything_else_fr:
       - text: "Autre chose que je peux essayer de répondre pour vous?"
 
@@ -340,6 +341,9 @@ responses:
 
     utter_reply_to_wrong_answer_fr:
       - text: "Je suis désolé, nous en prendrons note et le changerons dès que possible."
+
+    utter_share_with_your_friends_fr:
+      - text: "Pour partager avec vos amis, envoyez-leur ce lien: https://t.me/twb_uji_drc_bot"
 
     utter_ask_location_fr:
       - text: "Où es-tu?"
@@ -569,9 +573,6 @@ responses:
     utter_answer_covid_why_distancing_fr:
       - text: "Gardez une distance d'au moins 1 mètre avec toute personne qui tousse ou éternue. Lorsqu'une personne tousse ou éternue, elle fait passer de petites gouttelettes dans le nez ou la bouche qui peuvent contenir le virus. Évitez de toucher vos yeux, votre nez et votre bouche. Les mains touchent de nombreuses surfaces et peuvent transmettre des virus à votre corps lorsque vous touchez vos yeux, votre nez ou votre bouche. "
 
-    utter_anything_else_sw:
-      - text: "Kitu kingine chochote ambacho ninaweza kujaribu kukujibu?"
-
     utter_ask_anything_else_sw:
       - text: "Kitu kingine chochote ambacho ninaweza kujaribu kukujibu?"
 
@@ -579,7 +580,7 @@ responses:
       - text: "Unaweza kutuambia unazani tunaweza kufanya nini kwa kufanya ikuwe mzuri zaidi"
 
     utter_ask_first_time_sw:
-      - text: "Je! Hii ni mara ya kwanza kuongea"
+      - text: "Je! Hii ni mara ya kwanza kuongea?"
 
     utter_ask_given_name_sw:
       - text: "Je! Marafiki wako wanakuita nani"
@@ -614,7 +615,7 @@ responses:
       - text: "Minaweza jibu maulizo yoyote kuhusu COVID-19 ao maswali ya kawaida kuhusu afya"
 
     utter_get_infection_stats_sw:
-      - text: "Hivi sasa kuna watu {active} walioambukizwa katika {inchi}, mabadiliko kutoka kwa {mpya} jana, {vifo_mpya} vitu mbaya za mpya ({vifo_viote} jumla)"
+      - text: "Hivi sasa kuna watu {active} walioambukizwa katika {country}, mabadiliko kutoka kwa {new} jana, {new_deaths} vitu mbaya za mpya ({total_deaths} jumla)"
 
     utter_get_informed_consent_sw:
       - text: "Halo. Asante kwa kuwasiliana na mimi. Jina langu ni <Uji - Ukingo Jibu> Usiwe na wasiwasi, hakuna mtu anayeweza kukutambuwa kutoka kwa maulizo ao maoni yako lakini tunataka ujuwe kama tutakusanya na kuchunguza unachokiandika. Ikiwa tutafanya hivyo, tutaitumikisha kufanya huduma hii ikuwe mzuri zaidi. Tunaahidi kwamba hatuta tumikisha habari yako ya kibinafsi, pamoja na numero yako ya simu, akose kama tu unaturuhusu. Kwa kuendelea na mazungumzo haya, tutajuwa kama unakubali. Asante"
@@ -666,6 +667,9 @@ responses:
 
     utter_reply_to_wrong_answer_sw:
       - text: "Samahani, tutaandika na kuibadilisha haraka iwezekanavyo."
+
+    utter_share_with_your_friends_sw:
+      - text: "Ili kushiriki na marafiki wako, watumie kiunga hiki: https://t.me/twb_uji_drc_bot"
 
     utter_ask_location_sw:
       - text: "Uko wapi?"

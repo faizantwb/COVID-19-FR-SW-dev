@@ -45,6 +45,11 @@
 - Combien de patients pouvons-nous avoir en couronne en ce moment?
 - Combien de patients corona avons-nous atteints?
 - combien de personnes souffrent de corona?
+- Et à bukavu?
+- Et à Beni?
+- Cas confirmés à bukavu?
+- Cas confirmés à Beni?
+- Cas confirmés à Butembo?
 
 ## intent:ask_for_stats_fr
 - Quel est la statistique actuelle des malades de Covid 19 en RDC?
@@ -68,6 +73,7 @@
 - Combien de cas de Corona?
 - Combien de cas de Corona y a-t-il ?
 - Combien de personnes ont guéri du coronavirus?
+- Le chiffre actuelle de corona
 
 ## intent:ask_language_questions_fr
 - Quelle langues parlez vous?
@@ -108,6 +114,8 @@
 - Je veux passer un test
 - Quand devrais-je passer un test?
 - J'aimerais tester mon enfant.
+- Qui contacter pour covid19?
+- Ma mere est malade.
 
 ## intent:covid_children_stress_fr
 - Comment apaiser les enfants pendant la pandémie du COVID-19 ?
@@ -186,6 +194,7 @@
 - Les enfants sont-ils contagieux?
 - Comment le COVID-19 se propage-t-il ?
 - Comment le coronavirus se propage-t-il ?
+- Comment le corona est transmis?
 
 ## intent:covid_incubation_fr
 - Combien de temps une personne peut-elle ne pas présenter les symptômes du coronavirus ?
@@ -222,6 +231,8 @@
 - Les animaux peuvent-ils nous contaminer au COVID-19 ?
 - 
 - Mon animal de compagnie peut-il me transmettre le corona ?
+- Est ce que cest chinois
+- D'ou viens la maladie?
 
 ## intent:covid_isolate_fr
 - Dois-je m'isoler?
@@ -283,11 +294,11 @@
 ## intent:covid_myth_alcohol_chlorine_fr
 - Que puis-je utiliser pour guérir du coronavirus ?
 - Peut-on guérir du COVID-19 grâce au chlore ?
-- Puis-je utiliser de l'alcool ou du chlore pour tuer le coronavirus ?
+- Puis-je utiliser de l'Masanga ou du chlore pour tuer le coronavirus ?
 - Pulvériser du chlore sur mon corps me guérira-t-il du COVID-19 ?
 - Devrais-je utiliser un spray au chlore pour guérir du corona ?
-- Si j'ai attrapé le corona, l'alcool permet-il de le tuer ?
-- Pulvériser de l'alcool sur mon corps me guérira-t-il du corona ?
+- Si j'ai attrapé le corona, l'Masanga permet-il de le tuer ?
+- Pulvériser de l'Masanga sur mon corps me guérira-t-il du corona ?
 
 ## intent:covid_myth_antibiotics_fr
 - Existe-t-il des preuves que les antibiotiques tuent le COVID-19 ?
@@ -314,21 +325,21 @@
 - Y a-t-il un produit chimique que je peux boire pour tuer le virus?
 
 ## intent:covid_myth_drink_alcohol_fr
-- L'alcool guérit-il la couronne?
-- L'alcool aide-t-il à prévenir la maladie?
-- Puis-je boire de l'alcool contre la maladie?
-- L'alcool est-il un remède contre la convoitise?
-- Dois-je boire de l'alcool pour éviter la couronne?
-- Quand je bois de l'alcool, je ne peux pas obtenir de couronne?
-- L'alcool et la capacité de me protéger de la couronne?
-- L'alcool peut-il être une couronne?
-- L'alcool a-t-il la force ou le pouvoir d'empêcher le virus corona?
-- Devez-vous boire de l'alcool pour obtenir une couronne?
-- L'alcool peut-il me guérir corona?
-- L'alcool est-il nécessaire dans le corps pour m'empêcher de couronner?
-- Dois-je boire de l'alcool pour obtenir une couronne?
-- Si vous buvez de l'alcool, vous n'aurez pas de couronne?
-- L'alcool est-il bon pour une personne qui aime se protéger de la couronne?
+- L'Masanga guérit-il la couronne?
+- L'Masanga aide-t-il à prévenir la maladie?
+- Puis-je boire de l'Masanga contre la maladie?
+- L'Masanga est-il un remède contre la convoitise?
+- Dois-je boire de l'Masanga pour éviter la couronne?
+- Quand je bois de l'Masanga, je ne peux pas obtenir de couronne?
+- L'Masanga et la capacité de me protéger de la couronne?
+- L'Masanga peut-il être une couronne?
+- L'Masanga a-t-il la force ou le pouvoir d'empêcher le virus corona?
+- Devez-vous boire de l'Masanga pour obtenir une couronne?
+- L'Masanga peut-il me guérir corona?
+- L'Masanga est-il nécessaire dans le corps pour m'empêcher de couronner?
+- Dois-je boire de l'Masanga pour obtenir une couronne?
+- Si vous buvez de l'Masanga, vous n'aurez pas de couronne?
+- L'Masanga est-il bon pour une personne qui aime se protéger de la couronne?
 
 ## intent:covid_myth_flies_fr
 - Les mouches ont-elles une couronne?
@@ -789,6 +800,11 @@
 - Pourquoi le corona virus tue beaucoup des gens?
 - Comment différencier Ebola de Corona virus ?
 - La femme qui allaite peut elle transmettre le virus au bébé ?
+- Les survivants de COVID 19 sont-ils dangereux ?
+- M. Le ordinateur. Je veux demander- j'ai perdu mon travail a cause de COVID. Qq je peux faire maintenant.
+- Je peux rendre visite à mes parents âges ?
+- Je veux visiter ma grandmère
+- Est-ce que tu connais qq chose sur la rougeole
 
 ## intent:request_for_french_fr
 - J'ai déja dit!
@@ -802,6 +818,13 @@
 - Vous pouvez parler francais?
 - Puis-je avoir la réponse en français svp
 - Vous me comprenez pas!
+
+## intent:share_with_your_friends_fr
+- Quel est votre numéro?
+- Comment parler de vous à mes amis?
+- Quel est le lien vers ce bot?
+- Comment puis-je partager ce bot?
+- Je voudrais vous présenter à mes amis
 
 ## intent:user_says_thanks_fr
 - Merci
@@ -873,6 +896,11 @@
 - Tunaweza kuwa na bagonjwa ngapi ba corona kwa sasa?
 - Ivi tulishafika ku bagonjwa bangapi ba corona?
 - tushakuwa na batu ngapi benye banagonjwa corona?
+- 
+- 
+- 
+- 
+- 
 
 ## intent:ask_for_stats_sw
 - Je! Ni takwimu za sasa za COVID-19 za DRC?
@@ -896,6 +924,7 @@
 - Kesi ngapi za Corona?
 - Ni kesi ngapi za Corona njo ziko?
 - Batu bangapi balisha pona virusi ya corona?
+- 
 
 ## intent:ask_language_questions_sw
 - Unaongea lugha gani?
@@ -936,6 +965,8 @@
 - Nataka kupata mtihani
 - Wakati anatakiwa kupata mtihani?
 - Ningependa kujaribu mtoto wangu.
+- Nani kuwasiliana na covid19?
+- 
 
 ## intent:covid_children_stress_sw
 - Namna gani naweza kuweka watoto kimia wakati wa COVID-19?
@@ -1014,6 +1045,7 @@
 - Coronavirus inasambariziwaka aye?
 - COVID-19 inasambariziwaka aye?
 - virusi ya corona inasambariziwaka aye?
+- Je! Corona hupitishwaje?
 
 ## intent:covid_incubation_sw
 - muda gani mutu aneza fanya bila kuonesha alama za virusi ya corona?
@@ -1050,6 +1082,8 @@
 - Inawezekana kupata corona kutoka ku manyama?
 - Manyama zinaweza kuambukiza corona?
 - naweza pata corona kutokeya ku nyama yangu ya kunyumba?
+- 
+- 
 
 ## intent:covid_isolate_sw
 - Minapashwa kujitenga?
@@ -1617,6 +1651,11 @@
 - Je! Kwa nini virusi vya corona huua watu wengi?
 - Jinsi ya kutofautisha Ebola kutoka kwa virusi vya Corona?
 - Mwanamuke wa kunyonyesha anaweza ambukiza virusi kwa watoto?
+- Je! Walionusurika 19 wa COVID ni hatari?
+- M. Kompyuta. Nataka kuuliza - nimepoteza kazi yangu kwa sababu ya COVID. Je! Naweza kufanya nini sasa?
+- Je! Ninaweza kuwatembelea wazazi wangu wazee?
+- 
+- 
 
 ## intent:request_for_french_sw
 - Nilisha sema
@@ -1630,6 +1669,13 @@
 - Unaweza kusema Kifaransa?
 - Ninaweza kupata jibu kwa Kifaransa tafadhali
 - Haunisikiye?
+
+## intent:share_with_your_friends_sw
+- Nambari yako ni nini?
+- Je! Ninawaambiaje marafiki zangu kuhusu wewe?
+- Je! Ni kiungo gani cha bot hii?
+- Ninawezaje kushiriki bot hii?
+- Ningependa kukutambulisha kwa marafiki wangu
 
 ## intent:user_says_thanks_sw
 - Asante
