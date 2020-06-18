@@ -1,6 +1,6 @@
 <!-- FR GENERIC -->
 
-## answer_greet_fr
+## answer_greet
 * covid_travel_advice_fr
  - utter_reply_greeting_fr
  - utter_get_informed_consent_fr
@@ -9,1171 +9,385 @@
  - form{"name": null}
  - utter_set_expectations_fr
 
-## answer_ask_language_questions_fr
+## answer_ask_language_questions
 * ask_for_stats_fr
  - utter_introduce_survey_fr
  - form_language_questions_fr
  - form{"name": "form_language_questions_fr"}
  - form{"name": null}
 
-## answer_ask_for_stats_fr
+## answer_ask_for_stats
 * ask_for_local_stats_fr
  - action_get_infection_stats_fr
 
-## answer_ask_for_local_stats_fr
+## answer_ask_for_local_stats
 * answer_is_wrong_fr
  - utter_no_local_stats_fr
  - action_get_infection_stats_fr
 
-## answer_out_of_scope_fr
+## answer_out_of_scope
 * covid_treatments_fr
  - utter_out_of_scope_fr
  - utter_get_back_on_topic_fr
 
-## answer_user_says_thanks_fr
+## answer_user_says_thanks
 * covid_wash_hands_how_fr
  - utter_reply_thanks_fr
 
-## answer_where_do_you_live_fr
+## answer_where_do_you_live
 * covid_why_distancing_fr
  - utter_reply_where_do_you_live_fr
 
-## answer_whats_your_name_fr
+## answer_whats_your_name
 * covid_what_is_corona_covid-19_fr
  - utter_reply_whats_your_name_fr
 
-## answer_goodbye_fr
+## answer_goodbye
 * covid_symptoms_fr
  - form_feedback_fr
  - form{"name": "form_feedback_fr"}
  - form{"name": null}
 
-## answer_user_request_for_french_fr
+## answer_user_request_for_french
 * deny_fr
  - utter_reply_to_request_for_french_fr
 
-## answer_wrong answer_fr
+## answer_wrong answer
  - utter_reply_to_wrong_answer_fr
 
-## answer__fr
-
-<!-- SW GENERIC -->
-
-## answer_greet_sw
-* covid_travel_advice_sw
- - utter_reply_greeting_sw
- - utter_get_informed_consent_sw
- - form_first_time_sw
- - form{"name": "form_first_time_sw"}
- - form{"name": null}
- - utter_set_expectations_sw
-
-## answer_ask_language_questions_sw
-* ask_for_stats_sw
- - utter_introduce_survey_sw
- - form_language_questions_sw
- - form{"name": "form_language_questions_sw"}
- - form{"name": null}
-
-## answer_ask_for_stats_sw
-* ask_for_local_stats_sw
- - action_get_infection_stats_sw
-
-## answer_ask_for_local_stats_sw
-* answer_is_wrong_sw
- - utter_no_local_stats_sw
- - action_get_infection_stats_sw
-
-## answer_out_of_scope_sw
-* covid_treatments_sw
- - utter_out_of_scope_sw
- - utter_get_back_on_topic_sw
-
-## answer_user_says_thanks_sw
-* covid_wash_hands_how_sw
- - utter_reply_thanks_sw
-
-## answer_where_do_you_live_sw
-* covid_why_distancing_sw
- - utter_reply_where_do_you_live_sw
-
-## answer_whats_your_name_sw
-* covid_what_is_corona_covid-19_sw
- - utter_reply_whats_your_name_sw
-
-## answer_goodbye_sw
-* covid_symptoms_sw
- - form_feedback_sw
- - form{"name": "form_feedback_sw"}
- - form{"name": null}
-
-## answer_user_request_for_french_sw
-* deny_sw
- - utter_reply_to_request_for_french_sw
-
-## answer_wrong answer_sw
- - utter_reply_to_wrong_answer_sw
-
-## answer__sw
-
-<!-- EN GENERIC -->
-
-## answer_greet_en
-* covid_travel_advice_en
- - utter_reply_greeting_en
- - utter_get_informed_consent_en
- - form_first_time_en
- - form{"name": "form_first_time_en"}
- - form{"name": null}
- - utter_set_expectations_en
-
-## answer_ask_language_questions_en
-* ask_for_stats_en
- - utter_introduce_survey_en
- - form_language_questions_en
- - form{"name": "form_language_questions_en"}
- - form{"name": null}
-
-## answer_ask_for_stats_en
-* ask_for_local_stats_en
- - action_get_infection_stats_en
-
-## answer_ask_for_local_stats_en
-* answer_is_wrong_en
- - utter_no_local_stats_en
- - action_get_infection_stats_en
-
-## answer_out_of_scope_en
-* covid_treatments_en
- - utter_out_of_scope_en
- - utter_get_back_on_topic_en
-
-## answer_user_says_thanks_en
-* covid_wash_hands_how_en
- - utter_reply_thanks_en
-
-## answer_where_do_you_live_en
-* covid_why_distancing_en
- - utter_reply_where_do_you_live_en
-
-## answer_whats_your_name_en
-* covid_what_is_corona_covid-19_en
- - utter_reply_whats_your_name_en
-
-## answer_goodbye_en
-* covid_symptoms_en
- - form_feedback_en
- - form{"name": "form_feedback_en"}
- - form{"name": null}
-
-## answer_user_request_for_french_en
-* deny_en
- - utter_reply_to_request_for_french_en
-
-## answer_wrong answer_en
- - utter_reply_to_wrong_answer_en
-
-## answer__en
+## answer_
 
 <!-- FR COVID -->
 
-## answer_covid_anxiety_fr
-* covid_anxiety_fr
- - utter_answer_covid_anxiety_fr
+## answer_covid_anxiety
+* covid_anxiety
+ - utter_answer_covid_anxiety
 
-## answer_covid_call_a_doctor_fr
-* covid_call_a_doctor_fr
- - utter_answer_covid_call_a_doctor_fr
+## answer_covid_call_a_doctor
+* covid_call_a_doctor
+ - utter_answer_covid_call_a_doctor
 
-## answer_covid_children_stress_fr
-* covid_children_stress_fr
- - utter_answer_covid_children_stress_fr
+## answer_covid_children_stress
+* covid_children_stress
+ - utter_answer_covid_children_stress
 
-## answer_covid_disinfect_fr
-* covid_disinfect_fr
- - utter_answer_covid_disinfect_fr
+## answer_covid_disinfect
+* covid_disinfect
+ - utter_answer_covid_disinfect
 
-## answer_covid_donts_fr
-* covid_donts_fr
- - utter_answer_covid_donts_fr
+## answer_covid_donts
+* covid_donts
+ - utter_answer_covid_donts
 
-## answer_covid_explain_pandemic_fr
-* covid_explain_pandemic_fr
- - utter_answer_covid_explain_pandemic_fr
+## answer_covid_explain_pandemic
+* covid_explain_pandemic
+ - utter_answer_covid_explain_pandemic
 
-## answer_covid_gloves_fr
-* covid_gloves_fr
- - utter_answer_covid_gloves_fr
+## answer_covid_gloves
+* covid_gloves
+ - utter_answer_covid_gloves
 
-## answer_covid_hospital_fr
-* covid_hospital_fr
- - utter_answer_covid_hospital_fr
+## answer_covid_hospital
+* covid_hospital
+ - utter_answer_covid_hospital
 
-## answer_covid_how_spread_fr
-* covid_how_spread_fr
- - utter_answer_covid_how_spread_fr
+## answer_covid_how_spread
+* covid_how_spread
+ - utter_answer_covid_how_spread
 
-## answer_covid_incubation_fr
-* covid_incubation_fr
- - utter_answer_covid_incubation_fr
+## answer_covid_incubation
+* covid_incubation
+ - utter_answer_covid_incubation
 
-## answer_covid_infection_likelihood_fr
-* covid_infection_likelihood_fr
- - utter_answer_covid_infection_likelihood_fr
+## answer_covid_infection_likelihood
+* covid_infection_likelihood
+ - utter_answer_covid_infection_likelihood
 
-## answer_covid_infection_sources_fr
-* covid_infection_sources_fr
- - utter_answer_covid_infection_sources_fr
+## answer_covid_infection_sources
+* covid_infection_sources
+ - utter_answer_covid_infection_sources
 
-## answer_covid_isolate_fr
-* covid_isolate_fr
- - utter_answer_covid_isolate_fr
+## answer_covid_isolate
+* covid_isolate
+ - utter_answer_covid_isolate
 
-## answer_covid_masks_availability_fr
-* covid_masks_availability_fr
- - utter_answer_covid_masks_availability_fr
+## answer_covid_masks_availability
+* covid_masks_availability
+ - utter_answer_covid_masks_availability
 
-## answer_covid_masks_care_fr
-* covid_masks_care_fr
- - utter_answer_covid_masks_care_fr
+## answer_covid_masks_care
+* covid_masks_care
+ - utter_answer_covid_masks_care
 
-## answer_covid_masks_effectiveness_fr
-* covid_masks_effectiveness_fr
- - utter_answer_covid_masks_effectiveness_fr
+## answer_covid_masks_effectiveness
+* covid_masks_effectiveness
+ - utter_answer_covid_masks_effectiveness
 
-## answer_covid_masks_how_to_fr
-* covid_masks_how_to_fr
- - utter_answer_covid_masks_how_to_fr
+## answer_covid_masks_how_to
+* covid_masks_how_to
+ - utter_answer_covid_masks_how_to
 
-## answer_covid_risk_most_at_risk_fr
-* covid_risk_most_at_risk_fr
- - utter_answer_covid_risk_most_at_risk_fr
+## answer_covid_risk_most_at_risk
+* covid_risk_most_at_risk
+ - utter_answer_covid_risk_most_at_risk
 
-## answer_covid_risk_for_children_fr
-* covid_risk_for_children_fr
- - utter_answer_covid_risk_for_children_fr
+## answer_covid_risk_for_children
+* covid_risk_for_children
+ - utter_answer_covid_risk_for_children
 
-## answer_covid_risk_for_old_people_fr
-* covid_risk_for_old_people_fr
- - utter_answer_covid_risk_for_old_people_fr
+## answer_covid_risk_for_old_people
+* covid_risk_for_old_people
+ - utter_answer_covid_risk_for_old_people
 
-## answer_covid_risk_with_preexisting_fr
-* covid_risk_with_preexisting_fr
- - utter_answer_covid_risk_with_preexisting_fr
+## answer_covid_risk_with_preexisting
+* covid_risk_with_preexisting
+ - utter_answer_covid_risk_with_preexisting
 
-## answer_covid_myth_alcohol_chlorine_fr
-* covid_myth_alcohol_chlorine_fr
- - utter_answer_covid_myth_alcohol_chlorine_fr
+## answer_covid_myth_alcohol_chlorine
+* covid_myth_alcohol_chlorine
+ - utter_answer_covid_myth_alcohol_chlorine
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_antibiotics_fr
-* covid_myth_antibiotics_fr
- - utter_answer_covid_myth_antibiotics_fr
+## answer_covid_myth_antibiotics
+* covid_myth_antibiotics
+ - utter_answer_covid_myth_antibiotics
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_cold_kills_fr
-* covid_myth_cold_kills_fr
- - utter_answer_covid_myth_cold_kills_fr
+## answer_covid_myth_cold_kills
+* covid_myth_cold_kills
+ - utter_answer_covid_myth_cold_kills
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_drink_fr
-* covid_myth_drink_fr
- - utter_answer_covid_myth_drink_fr
+## answer_covid_myth_drink
+* covid_myth_drink
+ - utter_answer_covid_myth_drink
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_drink_alcohol_fr
-* covid_myth_drink_alcohol_fr
- - utter_answer_covid_myth_drink_alcohol_fr
+## answer_covid_myth_drink_alcohol
+* covid_myth_drink_alcohol
+ - utter_answer_covid_myth_drink_alcohol
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_flies_fr
-* covid_myth_flies_fr
- - utter_answer_covid_myth_flies_fr
+## answer_covid_myth_flies
+* covid_myth_flies
+ - utter_answer_covid_myth_flies
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_fruits_fr
-* covid_myth_fruits_fr
- - utter_answer_covid_myth_fruits_fr
+## answer_covid_myth_fruits
+* covid_myth_fruits
+ - utter_answer_covid_myth_fruits
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_garlic_fr
-* covid_myth_garlic_fr
- - utter_answer_covid_myth_garlic_fr
+## answer_covid_myth_garlic
+* covid_myth_garlic
+ - utter_answer_covid_myth_garlic
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_hand_dryers_fr
-* covid_myth_hand_dryers_fr
- - utter_answer_covid_myth_hand_dryers_fr
+## answer_covid_myth_hand_dryers
+* covid_myth_hand_dryers
+ - utter_answer_covid_myth_hand_dryers
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_heat_kills_fr
-* covid_myth_heat_kills_fr
- - utter_answer_covid_myth_heat_kills_fr
+## answer_covid_myth_heat_kills
+* covid_myth_heat_kills
+ - utter_answer_covid_myth_heat_kills
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_hold_breath_fr
-* covid_myth_hold_breath_fr
- - utter_answer_covid_myth_hold_breath_fr
+## answer_covid_myth_hold_breath
+* covid_myth_hold_breath
+ - utter_answer_covid_myth_hold_breath
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_hot_bath_fr
-* covid_myth_hot_bath_fr
- - utter_answer_covid_myth_hot_bath_fr
+## answer_covid_myth_hot_bath
+* covid_myth_hot_bath
+ - utter_answer_covid_myth_hot_bath
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_mosquitos_fr
-* covid_myth_mosquitos_fr
- - utter_answer_covid_myth_mosquitos_fr
+## answer_covid_myth_mosquitos
+* covid_myth_mosquitos
+ - utter_answer_covid_myth_mosquitos
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_only_old_fr
-* covid_myth_only_old_fr
- - utter_answer_covid_myth_only_old_fr
+## answer_covid_myth_only_old
+* covid_myth_only_old
+ - utter_answer_covid_myth_only_old
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_other_vaccines_fr
-* covid_myth_other_vaccines_fr
- - utter_answer_covid_myth_other_vaccines_fr
+## answer_covid_myth_other_vaccines
+* covid_myth_other_vaccines
+ - utter_answer_covid_myth_other_vaccines
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_phone_signals_fr
-* covid_myth_phone_signals_fr
- - utter_answer_covid_myth_phone_signals_fr
+## answer_covid_myth_phone_signals
+* covid_myth_phone_signals
+ - utter_answer_covid_myth_phone_signals
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_saline_rinse_fr
-* covid_myth_saline_rinse_fr
- - utter_answer_covid_myth_saline_rinse_fr
+## answer_covid_myth_saline_rinse
+* covid_myth_saline_rinse
+ - utter_answer_covid_myth_saline_rinse
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_spices_fr
-* covid_myth_spices_fr
- - utter_answer_covid_myth_spices_fr
+## answer_covid_myth_spices
+* covid_myth_spices
+ - utter_answer_covid_myth_spices
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_steam_fr
-* covid_myth_steam_fr
- - utter_answer_covid_myth_steam_fr
+## answer_covid_myth_steam
+* covid_myth_steam
+ - utter_answer_covid_myth_steam
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_thermal_scanners_fr
-* covid_myth_thermal_scanners_fr
- - utter_answer_covid_myth_thermal_scanners_fr
+## answer_covid_myth_thermal_scanners
+* covid_myth_thermal_scanners
+ - utter_answer_covid_myth_thermal_scanners
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_traditional_medicine_fr
-* covid_myth_traditional_medicine_fr
- - utter_answer_covid_myth_traditional_medicine_fr
+## answer_covid_myth_traditional_medicine
+* covid_myth_traditional_medicine
+ - utter_answer_covid_myth_traditional_medicine
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myth_UV_fr
-* covid_myth_UV_fr
- - utter_answer_covid_myth_UV_fr
+## answer_covid_myth_UV
+* covid_myth_UV
+ - utter_answer_covid_myth_UV
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_myths_summary_fr
-* covid_myths_summary_fr
- - utter_answer_covid_myths_summary_fr
+## answer_covid_myths_summary
+* covid_myths_summary
+ - utter_answer_covid_myths_summary
  - form_myth_source_fr
  - form{"name": "form_myth_source_fr"}
  - form{"name": null}
  - utter_anything_else_fr
 
-## answer_covid_on_surfaces_fr
-* covid_on_surfaces_fr
- - utter_answer_covid_on_surfaces_fr
-
-## answer_covid_protection_fr
-* covid_protection_fr
- - utter_answer_covid_protection_fr
-
-## answer_covid_protection_wash_hands_fr
-* covid_protection_wash_hands_fr
- - utter_answer_covid_protection_wash_hands_fr
-
-## answer_covid_protection_keep_distance_fr
-* covid_protection_keep_distance_fr
- - utter_answer_covid_protection_keep_distance_fr
-
-## answer_covid_protection_cover_mouth_nose_fr
-* covid_protection_cover_mouth_nose_fr
- - utter_answer_covid_protection_cover_mouth_nose_fr
-
-## answer_covid_protection_stay_at_home_fr
-* covid_protection_stay_at_home_fr
- - utter_answer_covid_protection_stay_at_home_fr
-
-## answer_covid_SARS_fr
-* covid_SARS_fr
- - utter_answer_covid_SARS_fr
-
-## answer_covid_stay_at_home_fr
-* covid_stay_at_home_fr
- - utter_answer_covid_stay_at_home_fr
-
-## answer_covid_stress_fr
-* covid_stress_fr
- - utter_answer_covid_stress_fr
-
-## answer_covid_symptoms_fr
-* covid_symptoms_fr
- - utter_answer_covid_symptoms_fr
-
-## answer_covid_travel_advice_fr
-* covid_travel_advice_fr
- - utter_answer_covid_travel_advice_fr
-
-## answer_covid_treatments_fr
-* covid_treatments_fr
- - utter_answer_covid_treatments_fr
-
-## answer_covid_wash_hands_frequency_fr
-* covid_wash_hands_frequency_fr
- - utter_answer_covid_wash_hands_frequency_fr
-
-## answer_covid_wash_hands_how_fr
-* covid_wash_hands_how_fr
- - utter_answer_covid_wash_hands_how_fr
-
-## answer_covid_what_is_corona_covid-19_fr
-* covid_what_is_corona_covid-19_fr
- - utter_answer_covid_what_is_corona_covid-19_fr
-
-## answer_covid_why_distancing_fr
-* covid_why_distancing_fr
- - utter_answer_covid_why_distancing_fr
-
-<!-- SW COVID -->
-
-## answer_covid_anxiety_sw
-* covid_anxiety_sw
- - utter_answer_covid_anxiety_sw
-
-## answer_covid_call_a_doctor_sw
-* covid_call_a_doctor_sw
- - utter_answer_covid_call_a_doctor_sw
-
-## answer_covid_children_stress_sw
-* covid_children_stress_sw
- - utter_answer_covid_children_stress_sw
-
-## answer_covid_disinfect_sw
-* covid_disinfect_sw
- - utter_answer_covid_disinfect_sw
-
-## answer_covid_donts_sw
-* covid_donts_sw
- - utter_answer_covid_donts_sw
-
-## answer_covid_explain_pandemic_sw
-* covid_explain_pandemic_sw
- - utter_answer_covid_explain_pandemic_sw
-
-## answer_covid_gloves_sw
-* covid_gloves_sw
- - utter_answer_covid_gloves_sw
-
-## answer_covid_hospital_sw
-* covid_hospital_sw
- - utter_answer_covid_hospital_sw
-
-## answer_covid_how_spread_sw
-* covid_how_spread_sw
- - utter_answer_covid_how_spread_sw
-
-## answer_covid_incubation_sw
-* covid_incubation_sw
- - utter_answer_covid_incubation_sw
-
-## answer_covid_infection_likelihood_sw
-* covid_infection_likelihood_sw
- - utter_answer_covid_infection_likelihood_sw
-
-## answer_covid_infection_sources_sw
-* covid_infection_sources_sw
- - utter_answer_covid_infection_sources_sw
-
-## answer_covid_isolate_sw
-* covid_isolate_sw
- - utter_answer_covid_isolate_sw
-
-## answer_covid_masks_availability_sw
-* covid_masks_availability_sw
- - utter_answer_covid_masks_availability_sw
-
-## answer_covid_masks_care_sw
-* covid_masks_care_sw
- - utter_answer_covid_masks_care_sw
-
-## answer_covid_masks_effectiveness_sw
-* covid_masks_effectiveness_sw
- - utter_answer_covid_masks_effectiveness_sw
-
-## answer_covid_masks_how_to_sw
-* covid_masks_how_to_sw
- - utter_answer_covid_masks_how_to_sw
-
-## answer_covid_risk_most_at_risk_sw
-* covid_risk_most_at_risk_sw
- - utter_answer_covid_risk_most_at_risk_sw
-
-## answer_covid_risk_for_children_sw
-* covid_risk_for_children_sw
- - utter_answer_covid_risk_for_children_sw
-
-## answer_covid_risk_for_old_people_sw
-* covid_risk_for_old_people_sw
- - utter_answer_covid_risk_for_old_people_sw
-
-## answer_covid_risk_with_preexisting_sw
-* covid_risk_with_preexisting_sw
- - utter_answer_covid_risk_with_preexisting_sw
-
-## answer_covid_myth_alcohol_chlorine_sw
-* covid_myth_alcohol_chlorine_sw
- - utter_answer_covid_myth_alcohol_chlorine_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_antibiotics_sw
-* covid_myth_antibiotics_sw
- - utter_answer_covid_myth_antibiotics_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_cold_kills_sw
-* covid_myth_cold_kills_sw
- - utter_answer_covid_myth_cold_kills_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_drink_sw
-* covid_myth_drink_sw
- - utter_answer_covid_myth_drink_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_drink_alcohol_sw
-* covid_myth_drink_alcohol_sw
- - utter_answer_covid_myth_drink_alcohol_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_flies_sw
-* covid_myth_flies_sw
- - utter_answer_covid_myth_flies_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_fruits_sw
-* covid_myth_fruits_sw
- - utter_answer_covid_myth_fruits_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_garlic_sw
-* covid_myth_garlic_sw
- - utter_answer_covid_myth_garlic_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_hand_dryers_sw
-* covid_myth_hand_dryers_sw
- - utter_answer_covid_myth_hand_dryers_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_heat_kills_sw
-* covid_myth_heat_kills_sw
- - utter_answer_covid_myth_heat_kills_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_hold_breath_sw
-* covid_myth_hold_breath_sw
- - utter_answer_covid_myth_hold_breath_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_hot_bath_sw
-* covid_myth_hot_bath_sw
- - utter_answer_covid_myth_hot_bath_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_mosquitos_sw
-* covid_myth_mosquitos_sw
- - utter_answer_covid_myth_mosquitos_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_only_old_sw
-* covid_myth_only_old_sw
- - utter_answer_covid_myth_only_old_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_other_vaccines_sw
-* covid_myth_other_vaccines_sw
- - utter_answer_covid_myth_other_vaccines_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_phone_signals_sw
-* covid_myth_phone_signals_sw
- - utter_answer_covid_myth_phone_signals_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_saline_rinse_sw
-* covid_myth_saline_rinse_sw
- - utter_answer_covid_myth_saline_rinse_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_spices_sw
-* covid_myth_spices_sw
- - utter_answer_covid_myth_spices_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_steam_sw
-* covid_myth_steam_sw
- - utter_answer_covid_myth_steam_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_thermal_scanners_sw
-* covid_myth_thermal_scanners_sw
- - utter_answer_covid_myth_thermal_scanners_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_traditional_medicine_sw
-* covid_myth_traditional_medicine_sw
- - utter_answer_covid_myth_traditional_medicine_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myth_UV_sw
-* covid_myth_UV_sw
- - utter_answer_covid_myth_UV_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_myths_summary_sw
-* covid_myths_summary_sw
- - utter_answer_covid_myths_summary_sw
- - form_myth_source_sw
- - form{"name": "form_myth_source_sw"}
- - form{"name": null}
- - utter_anything_else_sw
-
-## answer_covid_on_surfaces_sw
-* covid_on_surfaces_sw
- - utter_answer_covid_on_surfaces_sw
-
-## answer_covid_protection_sw
-* covid_protection_sw
- - utter_answer_covid_protection_sw
-
-## answer_covid_protection_wash_hands_sw
-* covid_protection_wash_hands_sw
- - utter_answer_covid_protection_wash_hands_sw
-
-## answer_covid_protection_keep_distance_sw
-* covid_protection_keep_distance_sw
- - utter_answer_covid_protection_keep_distance_sw
-
-## answer_covid_protection_cover_mouth_nose_sw
-* covid_protection_cover_mouth_nose_sw
- - utter_answer_covid_protection_cover_mouth_nose_sw
-
-## answer_covid_protection_stay_at_home_sw
-* covid_protection_stay_at_home_sw
- - utter_answer_covid_protection_stay_at_home_sw
-
-## answer_covid_SARS_sw
-* covid_SARS_sw
- - utter_answer_covid_SARS_sw
-
-## answer_covid_stay_at_home_sw
-* covid_stay_at_home_sw
- - utter_answer_covid_stay_at_home_sw
-
-## answer_covid_stress_sw
-* covid_stress_sw
- - utter_answer_covid_stress_sw
-
-## answer_covid_symptoms_sw
-* covid_symptoms_sw
- - utter_answer_covid_symptoms_sw
-
-## answer_covid_travel_advice_sw
-* covid_travel_advice_sw
- - utter_answer_covid_travel_advice_sw
-
-## answer_covid_treatments_sw
-* covid_treatments_sw
- - utter_answer_covid_treatments_sw
-
-## answer_covid_wash_hands_frequency_sw
-* covid_wash_hands_frequency_sw
- - utter_answer_covid_wash_hands_frequency_sw
-
-## answer_covid_wash_hands_how_sw
-* covid_wash_hands_how_sw
- - utter_answer_covid_wash_hands_how_sw
-
-## answer_covid_what_is_corona_covid-19_sw
-* covid_what_is_corona_covid-19_sw
- - utter_answer_covid_what_is_corona_covid-19_sw
-
-## answer_covid_why_distancing_sw
-* covid_why_distancing_sw
- - utter_answer_covid_why_distancing_sw
-
-<!-- EN COVID -->
-
-## answer_covid_anxiety_en
-* covid_anxiety_en
- - utter_answer_covid_anxiety_en
-
-## answer_covid_call_a_doctor_en
-* covid_call_a_doctor_en
- - utter_answer_covid_call_a_doctor_en
-
-## answer_covid_children_stress_en
-* covid_children_stress_en
- - utter_answer_covid_children_stress_en
-
-## answer_covid_disinfect_en
-* covid_disinfect_en
- - utter_answer_covid_disinfect_en
-
-## answer_covid_donts_en
-* covid_donts_en
- - utter_answer_covid_donts_en
-
-## answer_covid_explain_pandemic_en
-* covid_explain_pandemic_en
- - utter_answer_covid_explain_pandemic_en
-
-## answer_covid_gloves_en
-* covid_gloves_en
- - utter_answer_covid_gloves_en
-
-## answer_covid_hospital_en
-* covid_hospital_en
- - utter_answer_covid_hospital_en
-
-## answer_covid_how_spread_en
-* covid_how_spread_en
- - utter_answer_covid_how_spread_en
-
-## answer_covid_incubation_en
-* covid_incubation_en
- - utter_answer_covid_incubation_en
-
-## answer_covid_infection_likelihood_en
-* covid_infection_likelihood_en
- - utter_answer_covid_infection_likelihood_en
-
-## answer_covid_infection_sources_en
-* covid_infection_sources_en
- - utter_answer_covid_infection_sources_en
-
-## answer_covid_isolate_en
-* covid_isolate_en
- - utter_answer_covid_isolate_en
-
-## answer_covid_masks_availability_en
-* covid_masks_availability_en
- - utter_answer_covid_masks_availability_en
-
-## answer_covid_masks_care_en
-* covid_masks_care_en
- - utter_answer_covid_masks_care_en
-
-## answer_covid_masks_effectiveness_en
-* covid_masks_effectiveness_en
- - utter_answer_covid_masks_effectiveness_en
-
-## answer_covid_masks_how_to_en
-* covid_masks_how_to_en
- - utter_answer_covid_masks_how_to_en
-
-## answer_covid_risk_most_at_risk_en
-* covid_risk_most_at_risk_en
- - utter_answer_covid_risk_most_at_risk_en
-
-## answer_covid_risk_for_children_en
-* covid_risk_for_children_en
- - utter_answer_covid_risk_for_children_en
-
-## answer_covid_risk_for_old_people_en
-* covid_risk_for_old_people_en
- - utter_answer_covid_risk_for_old_people_en
-
-## answer_covid_risk_with_preexisting_en
-* covid_risk_with_preexisting_en
- - utter_answer_covid_risk_with_preexisting_en
-
-## answer_covid_myth_alcohol_chlorine_en
-* covid_myth_alcohol_chlorine_en
- - utter_answer_covid_myth_alcohol_chlorine_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_antibiotics_en
-* covid_myth_antibiotics_en
- - utter_answer_covid_myth_antibiotics_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_cold_kills_en
-* covid_myth_cold_kills_en
- - utter_answer_covid_myth_cold_kills_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_drink_en
-* covid_myth_drink_en
- - utter_answer_covid_myth_drink_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_drink_alcohol_en
-* covid_myth_drink_alcohol_en
- - utter_answer_covid_myth_drink_alcohol_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_flies_en
-* covid_myth_flies_en
- - utter_answer_covid_myth_flies_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_fruits_en
-* covid_myth_fruits_en
- - utter_answer_covid_myth_fruits_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_garlic_en
-* covid_myth_garlic_en
- - utter_answer_covid_myth_garlic_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_hand_dryers_en
-* covid_myth_hand_dryers_en
- - utter_answer_covid_myth_hand_dryers_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_heat_kills_en
-* covid_myth_heat_kills_en
- - utter_answer_covid_myth_heat_kills_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_hold_breath_en
-* covid_myth_hold_breath_en
- - utter_answer_covid_myth_hold_breath_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_hot_bath_en
-* covid_myth_hot_bath_en
- - utter_answer_covid_myth_hot_bath_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_mosquitos_en
-* covid_myth_mosquitos_en
- - utter_answer_covid_myth_mosquitos_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_only_old_en
-* covid_myth_only_old_en
- - utter_answer_covid_myth_only_old_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_other_vaccines_en
-* covid_myth_other_vaccines_en
- - utter_answer_covid_myth_other_vaccines_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_phone_signals_en
-* covid_myth_phone_signals_en
- - utter_answer_covid_myth_phone_signals_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_saline_rinse_en
-* covid_myth_saline_rinse_en
- - utter_answer_covid_myth_saline_rinse_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_spices_en
-* covid_myth_spices_en
- - utter_answer_covid_myth_spices_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_steam_en
-* covid_myth_steam_en
- - utter_answer_covid_myth_steam_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_thermal_scanners_en
-* covid_myth_thermal_scanners_en
- - utter_answer_covid_myth_thermal_scanners_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_traditional_medicine_en
-* covid_myth_traditional_medicine_en
- - utter_answer_covid_myth_traditional_medicine_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myth_UV_en
-* covid_myth_UV_en
- - utter_answer_covid_myth_UV_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_myths_summary_en
-* covid_myths_summary_en
- - utter_answer_covid_myths_summary_en
- - form_myth_source_en
- - form{"name": "form_myth_source_en"}
- - form{"name": null}
- - utter_anything_else_en
-
-## answer_covid_on_surfaces_en
-* covid_on_surfaces_en
- - utter_answer_covid_on_surfaces_en
-
-## answer_covid_protection_en
-* covid_protection_en
- - utter_answer_covid_protection_en
-
-## answer_covid_protection_wash_hands_en
-* covid_protection_wash_hands_en
- - utter_answer_covid_protection_wash_hands_en
-
-## answer_covid_protection_keep_distance_en
-* covid_protection_keep_distance_en
- - utter_answer_covid_protection_keep_distance_en
-
-## answer_covid_protection_cover_mouth_nose_en
-* covid_protection_cover_mouth_nose_en
- - utter_answer_covid_protection_cover_mouth_nose_en
-
-## answer_covid_protection_stay_at_home_en
-* covid_protection_stay_at_home_en
- - utter_answer_covid_protection_stay_at_home_en
-
-## answer_covid_SARS_en
-* covid_SARS_en
- - utter_answer_covid_SARS_en
-
-## answer_covid_stay_at_home_en
-* covid_stay_at_home_en
- - utter_answer_covid_stay_at_home_en
-
-## answer_covid_stress_en
-* covid_stress_en
- - utter_answer_covid_stress_en
-
-## answer_covid_symptoms_en
-* covid_symptoms_en
- - utter_answer_covid_symptoms_en
-
-## answer_covid_travel_advice_en
-* covid_travel_advice_en
- - utter_answer_covid_travel_advice_en
-
-## answer_covid_treatments_en
-* covid_treatments_en
- - utter_answer_covid_treatments_en
-
-## answer_covid_wash_hands_frequency_en
-* covid_wash_hands_frequency_en
- - utter_answer_covid_wash_hands_frequency_en
-
-## answer_covid_wash_hands_how_en
-* covid_wash_hands_how_en
- - utter_answer_covid_wash_hands_how_en
-
-## answer_covid_what_is_corona_covid-19_en
-* covid_what_is_corona_covid-19_en
- - utter_answer_covid_what_is_corona_covid-19_en
-
-## answer_covid_why_distancing_en
-* covid_why_distancing_en
- - utter_answer_covid_why_distancing_en
+## answer_covid_on_surfaces
+* covid_on_surfaces
+ - utter_answer_covid_on_surfaces
+
+## answer_covid_protection
+* covid_protection
+ - utter_answer_covid_protection
+
+## answer_covid_protection_wash_hands
+* covid_protection_wash_hands
+ - utter_answer_covid_protection_wash_hands
+
+## answer_covid_protection_keep_distance
+* covid_protection_keep_distance
+ - utter_answer_covid_protection_keep_distance
+
+## answer_covid_protection_cover_mouth_nose
+* covid_protection_cover_mouth_nose
+ - utter_answer_covid_protection_cover_mouth_nose
+
+## answer_covid_protection_stay_at_home
+* covid_protection_stay_at_home
+ - utter_answer_covid_protection_stay_at_home
+
+## answer_covid_SARS
+* covid_SARS
+ - utter_answer_covid_SARS
+
+## answer_covid_stay_at_home
+* covid_stay_at_home
+ - utter_answer_covid_stay_at_home
+
+## answer_covid_stress
+* covid_stress
+ - utter_answer_covid_stress
+
+## answer_covid_symptoms
+* covid_symptoms
+ - utter_answer_covid_symptoms
+
+## answer_covid_travel_advice
+* covid_travel_advice
+ - utter_answer_covid_travel_advice
+
+## answer_covid_treatments
+* covid_treatments
+ - utter_answer_covid_treatments
+
+## answer_covid_wash_hands_frequency
+* covid_wash_hands_frequency
+ - utter_answer_covid_wash_hands_frequency
+
+## answer_covid_wash_hands_how
+* covid_wash_hands_how
+ - utter_answer_covid_wash_hands_how
+
+## answer_covid_what_is_corona_covid-19
+* covid_what_is_corona_covid-19
+ - utter_answer_covid_what_is_corona_covid-19
+
+## answer_covid_why_distancing
+* covid_why_distancing
+ - utter_answer_covid_why_distancing
 
