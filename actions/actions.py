@@ -69,46 +69,15 @@ class FirstTimeForm(FormAction):
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:
 
-        if tracker.get_slot("first_time") == True:
-            return["first_time", "given_name", "location"]
-        else:
-            return["first_time"]
+        return["first_time"]
 
-    def slot_mappings(self) -> Dict[str, Union[Dict[str, Any], List[Dict[str, Any]]]]:
-
+    def slot_mappings(self) -> Text:
         return {
-            "first_time": [
-                self.from_intent(intent="affirm", value=True),
-                self.from_intent(intent="deny", value=False)
-            ],
-            "given_name": [
-                self.from_entity(entity="entity_given_name", intent="name_entry"),
-                self.from_intent(intent="deny", value=False),
-                self.from_intent(intent="ask_again", value="ask again")
-                #self.from_text(intent="name_entry")
-            ],
-            "location": self.from_text()
+        "first_time": [
+            self.from_intent(intent="affirm", value=True),
+            self.from_intent(intent="deny", value=False)
+            ]
         }
-
-    def validate_given_name(
-            self,
-            value: Text,
-            dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any],
-    ) -> Dict[Text, Any]:
-        """Validate value."""
-        if value == False:
-            dispatcher.utter_message(template="utter_thats_fine")
-            return {"given_name": ""}
-
-        elif value =="ask again":
-            dispatcher.utter_message(template="utter_your_first_name")
-            return {"given_name": None}
-
-        else:
-            dispatcher.utter_message(template="utter_we_have_what_we_need")
-            return {"given_name": value}
 
     def submit(
         self,
@@ -117,9 +86,10 @@ class FirstTimeForm(FormAction):
         domain: Dict[Text, Any],
     ) -> List[Dict]:
         if tracker.get_slot("first_time") == False:
-            dispatcher.utter_message(template="utter_welcome_back")
+            dispatcher.utter_message(text="Welcome back!")
         else:
-            dispatcher.utter_message(template="utter_greet_with_name")
+            dispatcher.utter_message(text="Hi! Welcome.")
+
         return[]
 
 
@@ -165,13 +135,7 @@ class LanguageQuestionsForm(FormAction):
 
         # if the answer to "Did we do OK?" is no...
         if tracker.get_slot("willing_to_do_language_survey") == True:
-            return[
-                    "willing_to_do_language_survey",
-                    "language_at_home",
-                    "language_for_written_comms",
-                    "language_for_verbal_comms",
-                    "preferred_channel"
-                    ]
+            return["willing_to_do_language_survey","language_at_home","language_for_written_comms","language_for_verbal_comms","preferred_channel"]
         else:
             return["willing_to_do_language_survey"]
 
@@ -202,7 +166,7 @@ class LanguageQuestionsForm(FormAction):
         return[]
 
 
-class MythSourceForm(FormAction):
+class LanguageQuestionsForm(FormAction):
 
     def name(self) -> Text:
         return "myth_source_form"
@@ -272,7 +236,7 @@ class ActionGetPandemicVideo(Action):
         #     "type": "video",
         #     "payload": {
         #         "title": "Watch Below Video",
-        #         "src": "https://www.youtube.com/watch?v=nMelwUuGqpA"
+        #         "src": "https://www.youtube.com/embed/-F6h43DRpcU"
         #     }
         # })
 
