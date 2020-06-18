@@ -396,9 +396,9 @@ responses:
       - text: "Avons-nous bien fait?"
         buttons:
         - title: "Oui"
-          payload: "/affirm"
+          payload: "/affirm_fr"
         - title: "Non"
-          payload: "/deny"
+          payload: "/deny_fr"
 
     utter_answer_covid_anxiety_fr:
       - text: "Les symptômes du coronavirus (COVID-19) sont généralement légers pour la plupart des gens, en particulier les jeunes et les personnes en bonne santé. Cependant, dans certains cas, il peut provoquer une maladie grave: environ 1 personne sur 5 qui l'attrape a besoin de soins hospitaliers. Il est donc tout à fait normal que les gens s'inquiètent de la façon dont le coronavirus pourrait les affecter ainsi que leurs proches. La chose la plus puissante que nous puissions faire est de prendre des mesures pour nous protéger, protéger nos proches et nos communautés. D'abord, le lavage régulier et minutieux des mains et le respect des mesures d'hygiène. Deuxièmement, restez informé et suivez les conseils des autorités sanitaires locales, y compris toute restriction mise en place sur les voyages, les déplacements et les rassemblements. Apprenez-en plus sur la façon de vous protéger sur: https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
@@ -725,9 +725,9 @@ responses:
       - text: "Tulitumika mzuri"
         buttons:
         - title: "Ndio"
-          payload: "/affirm"
+          payload: "/affirm_sw"
         - title: "Hapana"
-          payload: "/deny"
+          payload: "/deny_sw"
 
     utter_answer_covid_anxiety_sw:
       - text: "Ma halama za ugonjwa ya virusi ya corona (COVID-19) zinakuwaka za kidogo kwa watu wengi, hasa tena kwa vijana na kwa watu wenyi hali nzuri ya afya. Alakini, katika kesi zimoja, inaweza kusababisha ugonjwa ya nguvu: Umoya ku ba tano benyi banaipataka anahitaji matunzo ya hospitali. Kwa hivyo ni kawaida kabisa kwa batu ku ogopa gisi virusi ya corona inaweza kubagonjwesha na bandugu yabo. Kitu ya nguvu yenyi tunaweza kufanya ni kuchukuwa hatua za kujikinga, kukinga bandugu betu na jamii zetu. Kwanza kabisa kati ya hatua hizi ni mara kwa mara kunawa mikono vizuri na kuheshimu hatua za usafi. Ya pili, kufwata habari na ushauri wa mamlaka za baongozi ba afya nyumbani na pamoja na kizuizi yoyote ya usafiri, kutembeya na mikutano. Jifunze zaidi kuhusu gisi ya kujilinda kwa https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
