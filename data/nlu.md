@@ -1,6 +1,7 @@
 
 ## intent:affirm_fr
 - Oui
+- Haan g
 - Aaho
 - 👍
 - En effet
@@ -877,6 +878,7 @@
 
 ## intent:affirm_sw
 - ndio
+- affirmation phrase
 - haan g
 - 👍
 - kweli
