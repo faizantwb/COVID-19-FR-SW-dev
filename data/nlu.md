@@ -863,7 +863,6 @@
 - Je! Marafiki wako wanakuita nini?
 - Jina yako ni nani?
 - Je! Walikuita nini?
-- What is your name?
 
 ## intent:where_do_you_live
 - Unaishi wapi?
