@@ -80,6 +80,7 @@
 - Batu bangapi balisha pona virusi ya corona?
 - Batu ni bangapi benye biko na corona kwa sasa?
 - Corona iko fasi gani mu Congo?
+- Je! Ni hali gani ya ugonjwa wa covid19
 
 ## intent:ask_language_questions_swc
 - Unaongea lugha gani?
@@ -801,15 +802,12 @@
 - vipi
 - unafanyaka nini
 - unaweza fanya nini
-- Jambo
 - yo
 - vipi
 - habari.
 - Jambo
-- Jambo
 - habari
 - heya
-- Jambo
 - Habari za mchana
 - Habari za asubuhi
 - jambo
@@ -998,6 +996,7 @@
 - Combien de personnes ont guéri du coronavirus?
 - Le chiffre actuelle de corona
 - Le corona est dans quelle partie du Congo?
+- Quelle est la situation épidémiologiques de la covid19
 
 ## intent:ask_language_questions_fra
 - Quelle langues parlez vous?
@@ -1726,7 +1725,7 @@
 - bon après-midi
 - Bonjpur
 - Salut
-- Bonsoir
+- bonsoir
 
 ## intent:out_of_scope_fra
 - Qui est meilleur Ronaldo ou Messi?
