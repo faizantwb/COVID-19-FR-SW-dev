@@ -80,6 +80,9 @@
 - Batu bangapi balisha pona virusi ya corona?
 - Batu ni bangapi benye biko na corona kwa sasa?
 - Corona iko fasi gani mu Congo?
+- akuna shida, nataka kujuwa batu bangapi banegonjwa jana
+- virusi ya corona ilisha gusa inchi ngapi mu dunia?
+- Bifo ngapi mu RDC?
 - Je! Ni hali gani ya ugonjwa wa covid19
 
 ## intent:ask_language_questions_swc
@@ -551,6 +554,7 @@
 - Ninawezaje kujikinga na corona
 - Ninawezaje kujilinda?
 - Nifanye nini?
+- Aye njo gisi ya kukinga watoto?
 - Ninawezaje kujikinga na virusi?
 - Aye njo gisi ya kujikinga na magonjwa ya virusi ya corona?
 
@@ -677,6 +681,7 @@
 - Mke wangu ana homa
 - Nina maumivu ya kichwa
 - Nina koo
+- Nilipata homa, ndajuwa aye kama ni virusi ya corona?
 - Alakini banasemaka haiko ya mubaya sana, ni sawa tu mafua, basi
 
 ## intent:covid_travel_advice_swc
@@ -707,6 +712,7 @@
 - Je! Watu wanaweza kupona kutoka kwa coronavirus?
 - Naweza kuwa na COVID-19 milele?
 - Chanjo gani ninaweza kupata juya kuepuka corona?
+- Ba chinois baliwezaka aye kuponesha batu yabo ku corona?
 - Chanjo iko na uwezo ya kuuwa corona?
 - Ni kweli kwamba chanjo inaweza zuia virusi ya corona?
 - Namna gani ku tunza magonjwa ya Corona virus?
@@ -758,6 +764,7 @@
 - COVID-19 ni magonjwa gani?
 - Corona ni kitu gani?
 - Covid-19 ni mafua?
+- Tafadhali muniambiye virusi ya corona inamaanisha nini
 - ni nini COVID-19?
 
 ## intent:covid_why_distancing_swc
@@ -780,6 +787,7 @@
 
 ## intent:goodbye_swc
 - Kwaheri
+- Asante na kwa siku ingine ju nilikuwa na pima kama bitatumika
 - Yote ile
 - kwaheri
 - tutaonana
@@ -996,6 +1004,9 @@
 - Combien de personnes ont guéri du coronavirus?
 - Le chiffre actuelle de corona
 - Le corona est dans quelle partie du Congo?
+- pas de problème, je voudrais savoir le nombre de malades hier
+- Corona virus a déjà toucher combien de pays du monde?
+- Combien de mort de corona en rdc?
 - Quelle est la situation épidémiologiques de la covid19
 
 ## intent:ask_language_questions_fra
@@ -1123,6 +1134,7 @@
 - Comment puis-je attraper la maladie ?
 - Comment la maladie se transmet-elle ?
 - Comment le virus se propage-t-il ?
+- Quels sont les moyens de propagation du covid19?
 - Comment le COVID-19 se propage-t-il ?
 - Comment le coronavirus se propage-t-il ?
 - Comment le corona est transmis?
@@ -1452,6 +1464,7 @@
 - Quels sont les mode de prévention du coronavirus
 - Quels sont les mode de prévention du covid-19
 - Comment puis-je arrêter la propagation du virus ?
+- Comment on peut lutter contre le COVID-19?
 - Quelle protection existe-t-il contre le coronavirus ?
 - Comment puis-je protéger ma famille contre la maladie ?
 - Comment puis-je éviter d'attraper la maladie ?
@@ -1464,6 +1477,7 @@
 - Comment est-ce que je peux me proteger contre corona
 - Comment puis-je me protéger ?
 - Que je dois faire?
+- Comment protéger les enfants ?
 - Comment puis-je me protéger contre le virus ?
 - Comment se prévenir de la maladie à Virus Corona?
 
@@ -1512,6 +1526,7 @@
 
 ## intent:covid_risk_for_old_people_fra
 - Des aînés qui souffrent de la maladie corona?
+- Pourquoi les personnes les plus âgés sont touchées par le Corona virus ?
 - Les personnes âgées peuvent-elles obtenir une couronne?
 - Combien d'années peuvent provoquer une maladie corona?
 - venir avec les révélations corona?
@@ -1588,6 +1603,7 @@
 - Ma femme a de la fièvre
 - J'ai mal de tete
 - J'ai mal à la gorge
+- j'ai eu de la fièvre, comment savoir s'il s'agissait du coronavirus ?
 - Mais on dit que c'est pas si grave. Comme une grippe, c'est tout.
 
 ## intent:covid_travel_advice_fra
@@ -1618,6 +1634,7 @@
 - Les gens peuvent-ils guérir du virus corona?
 - Aurai-je le COVID-19 pour toujours?
 - Quels vaccins contre le corona sont disponibles ?
+- Comment les Chinois ont reussi à guérir leurs peuples contre le Corona
 - Les vaccins sont-ils efficaces pour tuer le corona ?
 - Est-il vrai que les vaccins neutralisent le coronavirus ?
 - Comment traiter la maladie du coronavirus?
@@ -1658,6 +1675,7 @@
 
 ## intent:covid_what_is_corona_covid-19_fra
 - COVID-19 et coronavirus désignent-ils la même chose ?
+- Que signifie COVID-19?
 - Pouvez-vous expliquer ce qu'est le coronavirus ?
 - Pouvez-vous expliquer ce qu'est le COVID-19 ?
 - COVID-19 et coronavirus désignent-ils la même chose ?
@@ -1669,6 +1687,7 @@
 - COVID-19 c'est quelle maladie?
 - Corona c'est quoi?
 - Covid-19 c'est la grippe?
+- Veillez me donner la signification de Corona
 - Qui est-ce qui est le COVID-19?
 
 ## intent:covid_why_distancing_fra
@@ -1691,6 +1710,7 @@
 
 ## intent:goodbye_fra
 - au revoir
+- Merci à la prochaine car j'étais dans l'essai pour voir si l'application dois fonctionner
 - c'est tout
 - Au revoir
 - à plus
